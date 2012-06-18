@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="VG Cats"/>
+    <Author Value="Scott Ramsoomair"/>
+    <Address Value="http://www.vgcats.com/comics"/>
+    <FirstComicAddress Value="http://www.vgcats.com/comics/?strip_id=0"/>
+  </Details>
+  <XPath>
+    <Image Value="//td[@align=&#34;left&#34;]/div[@align=&#34;center&#34;]/img/@src"/>
+    <Next Value="//div[@align=&#34;center&#34;]/a[img/@src=&#34;next.gif&#34;]/@href"/>
+    <Previous Value="//div[@align=&#34;center&#34;]/a[img/@src=&#34;back.gif&#34;]/@href"/>
+  </XPath>
+</Comic>

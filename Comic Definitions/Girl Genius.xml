@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Girl Genius"/>
+    <Author Value="Studio Foglio, LLC"/>
+    <Address Value="http://www.girlgeniusonline.com/comic.php"/>
+    <FirstComicAddress Value="http://www.girlgeniusonline.com/comic.php?date=20021104"/>
+  </Details>
+  <XPath>
+    <Image Value="//img[@alt=&#34;Comic&#34;]/@src"/>
+    <Next Value="//a[img/@alt=&#34;The Next Comic&#34;]/@href"/>
+    <Previous Value="//a[img/@alt=&#34;The Previous Comic&#34;]/@href"/>
+  </XPath>
+</Comic>

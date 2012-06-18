@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Penny Arcade"/>
+    <Author Value="Penny Arcade"/>
+    <Address Value="http://penny-arcade.com/comic"/>
+    <FirstComicAddress Value="http://penny-arcade.com/comic/1998/11/18"/>
+    <LastComicAddress Value="http://penny-arcade.com/comic"/>
+  </Details>
+  <XPath>
+    <Image Value="//div[@class=&#34;post comic&#34;]/img/@src"/>
+    <Next Value="//a[@class=&#34;btnNext btn&#34;]/@href"/>
+    <Previous Value="//a[@class=&#34;btnPrev btn&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <FileNaming XPath="//div[@class=&#34;post comic&#34;]/img/@alt" Pattern="%Index% - %XPath%"/>
+    <LastComicHandling StopImmediately="false"/>
+    <PageDownloadOptions StopOnMissingImage="False" UseSafeCode="True"/>
+  </Advanced>
+</Comic>

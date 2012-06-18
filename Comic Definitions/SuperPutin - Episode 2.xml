@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="SuperPutin - Episode 2"/>
+    <Author Value="Sergey Kalenik"/>
+    <Address Value="http://www.superputin.ru/englishski/index.html"/>
+    <FirstComicAddress Value="http://www.superputin.ru/episode2english/01.html"/>
+  </Details>
+  <XPath>
+    <Image Value="//p/a/img/@src"/>
+    <Next Value="//p/a[img]/@href"/>
+    <Previous Value=""/>
+  </XPath>
+  <Advanced>
+    <FileNaming Pattern="Episode 2 - %Index%"/>
+  </Advanced>
+</Comic>

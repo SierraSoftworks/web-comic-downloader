@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Real Life Comics"/>
+    <Author Value="Greg Dean"/>
+    <Address Value="http://www.reallifecomics.com"/>
+    <FirstComicAddress Value="http://www.reallifecomics.com/archive/991115.html"/>
+  </Details>
+  <XPath>
+    <Image Value="//div[@class=&#34;comic_image&#34;]/img/@src"/>
+    <Next Value="//a[img/@src=&#34;/images/nav_next.png&#34;]/@href"/>
+    <Previous Value="//a[img/@src=&#34;/images/nav_prev.png&#34;]/@href"/>
+  </XPath>
+</Comic>

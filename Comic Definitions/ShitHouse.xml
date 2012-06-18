@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Shit House"/>
+    <Author Value="Jolly Jack"/>
+    <Address Value="http://www.pipingrad.com/sht.html"/>
+    <FirstComicAddress Value="http://www.pipingrad.com/sht/sht1.html"/>
+  </Details>
+  <XPath>
+    <Image Value="//tr/td/div/img/@src"/>
+    <Next Value="//a[img/@name=&#34;next&#34;]/@href"/>
+    <Previous Value="//a[img/@name=&#34;prev&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <FileNaming Pattern="%Index%"/>
+    <PageDownloadOptions UseSafeCode="true"/>
+  </Advanced>
+</Comic>

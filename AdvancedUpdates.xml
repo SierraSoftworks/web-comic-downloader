@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Updates xmlns="SierraLib.Updates.Advanced">
+  <Update version="2.7.0.0" os="Win32" platform="Any" osversion="5.1.0.0">
+    <Name>Web Comic Downloader v2.7.0</Name>
+    <Description>
+      Fixes a problem when parsing image paths which included spaces in them
+    </Description>
+    <ChangeLog>
+      - Fixes an issue when parsing image paths which contained unescaped spaces
+        which resulted in invalid request URLs. (Credit to Mr. von Spiegel for finding this bug)
+      - Added Girls with Slingshots to the list of supported comics
+        (Credit to Mr. von Spiegel for the definition file)       
+    </ChangeLog>
+    <Downloads>
+      <Server name="Sierra Softworks" address="http://sierrasoftworks.com" downloadpath="downloads/wkd/2.7.0.0" />
+      <Download url="WKD.exe" path="/" size="146432" md5sum="ir+QhF4rXGi7LZp+alzksg==" />
+      <Download url="XML/XPath.exe" path="/XML" size="9216" md5sum="wPti+EfvcZaXaQFh21ixug==" />
+      <Download url="SierraLib.Analytics.dll" path="/" size="61440" md5sum="+wAMRUNDKsKAV2/7ZJpvlQ==" />
+      <Download url="SierraLib.Databases.dll" path="/" size="781824" md5sum="DoNmO5fWQJt0+t2mKb2XbQ==" />
+      <Download url="SierraLib.Drawing.dll" path="/" size="29184" md5sum="SBDesF42Jpt4jX6owU30Hw==" />
+      <Download url="SierraLib.IO.dll" path="/" size="382976" md5sum="jdowtzBl5HKjAg6escEadQ==" />
+      <Download url="SierraLib.Net.dll" path="/" size="67584" md5sum="axPFraDJsIKrwwzVy607Lw==" />
+      <Download url="SierraLib.Security.dll" path="/" size="60416" md5sum="DSWE0Hxf88V/qbY5QGzRzQ==" />
+      <Download url="SierraLib.UI.dll" path="/" size="357376" md5sum="WewxZ+t1nW4G28P6bTA7yQ==" />
+      <Download url="SierraLib.Updates.dll" path="/" size="75776" md5sum="twxZLPIPjqyi+RDrJpFrig==" />
+      <Download url="SierraLib.Windows.dll" path="/" size="511488" md5sum="kNhDjRBzYMyDSA+/izEYqw==" />
+      <Download url="XML/SierraLib.IO.dll" path="/XML" size="382976" md5sum="kdRlRz8VG6CVddBpTqigyA==" />
+      <Download url="Comic Definitions/Calvin and Hobbes.xml" path="/Comic Definitions" size="754" md5sum="YSeZWvAz4WS9Mj6p03trkw==" />
+      <Download url="Comic Definitions/Chainsaw Suit.xml" path="/Comic Definitions" size="561" md5sum="cRoQpafOOpv/tt+f5yC+eQ==" />
+      <Download url="Comic Definitions/Ctrl+Alt+Del.xml" path="/Comic Definitions" size="992" md5sum="hMqPI8oaFbiSViM8suG+Dg==" />
+      <Download url="Comic Definitions/Cyanide and Happiness.xml" path="/Comic Definitions" size="600" md5sum="TSXS7J0mCiWQeTiDer2udA==" />
+      <Download url="Comic Definitions/Endless Origami.xml" path="/Comic Definitions" size="836" md5sum="d04ABOGdPn6lovpJmyK0qA==" />
+      <Download url="Comic Definitions/Garfield Minus Garfield.xml" path="/Comic Definitions" size="652" md5sum="++F98CS8m+L7Dad52WL2Iw==" />
+      <Download url="Comic Definitions/Garfield.xml" path="/Comic Definitions" size="726" md5sum="050SYNbf37UBH/ZuYoIMAg==" />
+      <Download url="Comic Definitions/Girl Genius.xml" path="/Comic Definitions" size="595" md5sum="mrPL2pJx0s4vBFBHD/sDkQ==" />
+      <Download url="Comic Definitions/Girls with Slingshots.xml" path="/Comic Definitions" size="905" md5sum="twjuJQaq6GKJWBjSPWanwg==" />
+      <Download url="Comic Definitions/GPF Comics.xml" path="/Comic Definitions" size="588" md5sum="D9OQXq/GGzDxY9wqcOaH+g==" />
+      <Download url="Comic Definitions/Headtrip.xml" path="/Comic Definitions" size="802" md5sum="uUc0Wy373mxrMmtXmngm5Q==" />
+      <Download url="Comic Definitions/I'm My Own Mascot.xml" path="/Comic Definitions" size="754" md5sum="OvOzEGoBUibn1Ml90T5rKw==" />
+      <Download url="Comic Definitions/Penny Arcade.xml" path="/Comic Definitions" size="875" md5sum="pagLvqTveiBJq5OuqX893g==" />
+      <Download url="Comic Definitions/Pon and Zi.xml" path="/Comic Definitions" size="624" md5sum="TWNLhw6F0vRcNlPof6F7Og==" />
+      <Download url="Comic Definitions/Real Life Comics.xml" path="/Comic Definitions" size="593" md5sum="T22Sa5RS3iONr4GvvQWE8g==" />
+      <Download url="Comic Definitions/Sequential Art.xml" path="/Comic Definitions" size="664" md5sum="UnSIevwOY6NzC+cV3RwkpA==" />
+      <Download url="Comic Definitions/ShitHouse.xml" path="/Comic Definitions" size="640" md5sum="StiY1oIzIZ7ftq/VfJKm4g==" />
+      <Download url="Comic Definitions/SlightlyDamned.xml" path="/Comic Definitions" size="726" md5sum="AFY6w8SQqYhkZnNmqUF48g==" />
+      <Download url="Comic Definitions/SuperPutin - Episode 1.xml" path="/Comic Definitions" size="582" md5sum="K2vQJYWeYSr3msH9eHDisA==" />
+      <Download url="Comic Definitions/SuperPutin - Episode 2.xml" path="/Comic Definitions" size="584" md5sum="ehKghIYJiHV8655gFra9FQ==" />
+      <Download url="Comic Definitions/SuperPutin - Episode 3.xml" path="/Comic Definitions" size="584" md5sum="j1i8MGz1qX4d1apXqjZKcw==" />
+      <Download url="Comic Definitions/SuperPutin - Episode 4.xml" path="/Comic Definitions" size="584" md5sum="mZARruOatUN+h8eAI21paQ==" />
+      <Download url="Comic Definitions/TwoKinds.xml" path="/Comic Definitions" size="644" md5sum="zQCpYngxoU/AX/xDmZ63KQ==" />
+      <Download url="Comic Definitions/VG Cats.xml" path="/Comic Definitions" size="636" md5sum="oxg/ABfWGANq7poilFmJ6w==" />
+      <Download url="Comic Definitions/XKCD.xml" path="/Comic Definitions" size="1223" md5sum="6d0yIe9k7tuHiO9zIKbmBQ==" />
+      <Download url="XML/WebComicDefinition.xsd" path="/XML" size="5466" md5sum="Z6djH9u8UMiHphcBkcX+xw==" />
+    </Downloads>
+    <Info>http://sierrasoftworks.com/wkd/updates/2600</Info>
+  </Update>
+  <Update version="2.6.0.0" os="Win32" platform="Any" osversion="5.1.0.0">
+    <Name>Web Comic Downloader v2.6.0</Name>
+    <Description>
+      Fixes a failure to compute the correct relative directory when only
+      relative path arguments are specified by a comic.
+    </Description>
+    <ChangeLog>
+      - Fixes a failure to compute the correct relative directory when only
+        relative path arguments are specified by a comic.
+      - Adds TwoKinds to the list of supported comics (Alwin Li)
+      - Adds Slightly Damned to the list of supported comics (Alwin Li)
+    </ChangeLog>
+    <Downloads>
+      <Server name="Sierra Softworks" address="http://sierrasoftworks.com" downloadpath="downloads/wkd/2.6.0.0" />
+      <Download url="WKD.exe" path="/" size="146432" md5sum="d2uERAO88digj4ZA0ZtRmg==" />
+      <Download url="XML/XPath.exe" path="/XML" size="9216" md5sum="wPti+EfvcZaXaQFh21ixug==" />
+      <Download url="SierraLib.Analytics.dll" path="/" size="61440" md5sum="+wAMRUNDKsKAV2/7ZJpvlQ==" />
+      <Download url="SierraLib.Databases.dll" path="/" size="781824" md5sum="DoNmO5fWQJt0+t2mKb2XbQ==" />
+      <Download url="SierraLib.Drawing.dll" path="/" size="29184" md5sum="SBDesF42Jpt4jX6owU30Hw==" />
+      <Download url="SierraLib.IO.dll" path="/" size="382976" md5sum="jdowtzBl5HKjAg6escEadQ==" />
+      <Download url="SierraLib.Net.dll" path="/" size="67584" md5sum="axPFraDJsIKrwwzVy607Lw==" />
+      <Download url="SierraLib.Security.dll" path="/" size="60416" md5sum="DSWE0Hxf88V/qbY5QGzRzQ==" />
+      <Download url="SierraLib.UI.dll" path="/" size="357376" md5sum="WewxZ+t1nW4G28P6bTA7yQ==" />
+      <Download url="SierraLib.Updates.dll" path="/" size="75776" md5sum="twxZLPIPjqyi+RDrJpFrig==" />
+      <Download url="SierraLib.Windows.dll" path="/" size="511488" md5sum="kNhDjRBzYMyDSA+/izEYqw==" />
+      <Download url="XML/SierraLib.IO.dll" path="/XML" size="382976" md5sum="kdRlRz8VG6CVddBpTqigyA==" />
+      <Download url="Comic Definitions/Calvin and Hobbes.xml" path="/Comic Definitions" size="754" md5sum="YSeZWvAz4WS9Mj6p03trkw==" />
+      <Download url="Comic Definitions/Chainsaw Suit.xml" path="/Comic Definitions" size="561" md5sum="cRoQpafOOpv/tt+f5yC+eQ==" />
+      <Download url="Comic Definitions/Ctrl+Alt+Del.xml" path="/Comic Definitions" size="992" md5sum="hMqPI8oaFbiSViM8suG+Dg==" />
+      <Download url="Comic Definitions/Cyanide and Happiness.xml" path="/Comic Definitions" size="600" md5sum="TSXS7J0mCiWQeTiDer2udA==" />
+      <Download url="Comic Definitions/Endless Origami.xml" path="/Comic Definitions" size="836" md5sum="d04ABOGdPn6lovpJmyK0qA==" />
+      <Download url="Comic Definitions/Garfield Minus Garfield.xml" path="/Comic Definitions" size="652" md5sum="++F98CS8m+L7Dad52WL2Iw==" />
+      <Download url="Comic Definitions/Garfield.xml" path="/Comic Definitions" size="726" md5sum="050SYNbf37UBH/ZuYoIMAg==" />
+      <Download url="Comic Definitions/Girl Genius.xml" path="/Comic Definitions" size="595" md5sum="mrPL2pJx0s4vBFBHD/sDkQ==" />
+      <Download url="Comic Definitions/Girls with Slingshots.xml" path="/Comic Definitions" size="905" md5sum="twjuJQaq6GKJWBjSPWanwg==" />
+      <Download url="Comic Definitions/GPF Comics.xml" path="/Comic Definitions" size="588" md5sum="D9OQXq/GGzDxY9wqcOaH+g==" />
+      <Download url="Comic Definitions/Headtrip.xml" path="/Comic Definitions" size="802" md5sum="uUc0Wy373mxrMmtXmngm5Q==" />
+      <Download url="Comic Definitions/I'm My Own Mascot.xml" path="/Comic Definitions" size="754" md5sum="OvOzEGoBUibn1Ml90T5rKw==" />
+      <Download url="Comic Definitions/Penny Arcade.xml" path="/Comic Definitions" size="875" md5sum="pagLvqTveiBJq5OuqX893g==" />
+      <Download url="Comic Definitions/Pon and Zi.xml" path="/Comic Definitions" size="624" md5sum="TWNLhw6F0vRcNlPof6F7Og==" />
+      <Download url="Comic Definitions/Real Life Comics.xml" path="/Comic Definitions" size="593" md5sum="T22Sa5RS3iONr4GvvQWE8g==" />
+      <Download url="Comic Definitions/Sequential Art.xml" path="/Comic Definitions" size="664" md5sum="UnSIevwOY6NzC+cV3RwkpA==" />
+      <Download url="Comic Definitions/ShitHouse.xml" path="/Comic Definitions" size="640" md5sum="StiY1oIzIZ7ftq/VfJKm4g==" />
+      <Download url="Comic Definitions/SlightlyDamned.xml" path="/Comic Definitions" size="726" md5sum="AFY6w8SQqYhkZnNmqUF48g==" />
+      <Download url="Comic Definitions/SuperPutin - Episode 1.xml" path="/Comic Definitions" size="582" md5sum="K2vQJYWeYSr3msH9eHDisA==" />
+      <Download url="Comic Definitions/SuperPutin - Episode 2.xml" path="/Comic Definitions" size="584" md5sum="ehKghIYJiHV8655gFra9FQ==" />
+      <Download url="Comic Definitions/SuperPutin - Episode 3.xml" path="/Comic Definitions" size="584" md5sum="j1i8MGz1qX4d1apXqjZKcw==" />
+      <Download url="Comic Definitions/SuperPutin - Episode 4.xml" path="/Comic Definitions" size="584" md5sum="mZARruOatUN+h8eAI21paQ==" />
+      <Download url="Comic Definitions/TwoKinds.xml" path="/Comic Definitions" size="644" md5sum="zQCpYngxoU/AX/xDmZ63KQ==" />
+      <Download url="Comic Definitions/VG Cats.xml" path="/Comic Definitions" size="636" md5sum="oxg/ABfWGANq7poilFmJ6w==" />
+      <Download url="Comic Definitions/XKCD.xml" path="/Comic Definitions" size="1223" md5sum="6d0yIe9k7tuHiO9zIKbmBQ==" />
+      <Download url="XML/WebComicDefinition.xsd" path="/XML" size="5466" md5sum="Z6djH9u8UMiHphcBkcX+xw==" />
+    </Downloads>
+    <Info>http://sierrasoftworks.com/wkd/updates/2600</Info>
+  </Update>
+  <Update version="2.5.0.0" os="Win32" platform="Any" osversion="5.1.0.0">
+    <Name>Web Comic Downloader v2.5.0</Name>
+    <Description>
+      Fixes a crash with comics who's names contained "'" characters
+    </Description>
+    <ChangeLog>
+      - Fixed crash when attempting to download a comic with "'" characters in its name
+      - Added I'm My Own Mascot to the list of supported comics
+    </ChangeLog>
+    <Downloads>
+      <Server name="Sierra Softworks" address="http://sierrasoftworks.com" downloadpath="downloads/wkd/2.5.0.0" />
+      <Download url="WKD.exe" path="/" size="146432" md5sum="gT9rG2qNCo4FWJclLw1vhQ==" />
+      <Download url="XML/XPath.exe" path="/XML" size="9216" md5sum="wPti+EfvcZaXaQFh21ixug==" />
+      <Download url="SierraLib.Analytics.dll" path="/" size="61440" md5sum="V+pnC6nXdTu65y20slu4AA==" />
+      <Download url="SierraLib.Databases.dll" path="/" size="781824" md5sum="Y9dNdXXI9xIQzCWJt0c5ug==" />
+      <Download url="SierraLib.Drawing.dll" path="/" size="29184" md5sum="SBDesF42Jpt4jX6owU30Hw==" />
+      <Download url="SierraLib.IO.dll" path="/" size="382976" md5sum="VWfkgnE5DqUXDknSKpNatA==" />
+      <Download url="SierraLib.Net.dll" path="/" size="80896" md5sum="fvA97fak8+VhEwXkyZ5VDQ==" />
+      <Download url="SierraLib.Security.dll" path="/" size="60416" md5sum="fPQ/hVsjSbgQ5m0hX5+bQQ==" />
+      <Download url="SierraLib.UI.dll" path="/" size="357376" md5sum="IDYa4GEC655nc1NgO3W4wQ==" />
+      <Download url="SierraLib.Updates.dll" path="/" size="75776" md5sum="eCYERDLzd9fdME+Py7tEZw==" />
+      <Download url="SierraLib.Windows.dll" path="/" size="511488" md5sum="9ztpf6WolY/1l7KpwUU1eA==" />
+      <Download url="XML/SierraLib.IO.dll" path="/XML" size="382976" md5sum="kdRlRz8VG6CVddBpTqigyA==" />
+      <Download url="Comic Definitions/Calvin and Hobbes.xml" path="/Comic Definitions" size="754" md5sum="YSeZWvAz4WS9Mj6p03trkw==" />
+      <Download url="Comic Definitions/Chainsaw Suit.xml" path="/Comic Definitions" size="561" md5sum="cRoQpafOOpv/tt+f5yC+eQ==" />
+      <Download url="Comic Definitions/Ctrl+Alt+Del.xml" path="/Comic Definitions" size="992" md5sum="hMqPI8oaFbiSViM8suG+Dg==" />
+      <Download url="Comic Definitions/Cyanide and Happiness.xml" path="/Comic Definitions" size="600" md5sum="TSXS7J0mCiWQeTiDer2udA==" />
+      <Download url="Comic Definitions/Endless Origami.xml" path="/Comic Definitions" size="836" md5sum="d04ABOGdPn6lovpJmyK0qA==" />
+      <Download url="Comic Definitions/Garfield Minus Garfield.xml" path="/Comic Definitions" size="652" md5sum="++F98CS8m+L7Dad52WL2Iw==" />
+      <Download url="Comic Definitions/Garfield.xml" path="/Comic Definitions" size="726" md5sum="050SYNbf37UBH/ZuYoIMAg==" />
+      <Download url="Comic Definitions/Girl Genius.xml" path="/Comic Definitions" size="595" md5sum="mrPL2pJx0s4vBFBHD/sDkQ==" />
+      <Download url="Comic Definitions/GPF Comics.xml" path="/Comic Definitions" size="588" md5sum="D9OQXq/GGzDxY9wqcOaH+g==" />
+      <Download url="Comic Definitions/Headtrip.xml" path="/Comic Definitions" size="802" md5sum="uUc0Wy373mxrMmtXmngm5Q==" />
+      <Download url="Comic Definitions/I'm My Own Mascot.xml" path="/Comic Definitions" size="754" md5sum="OvOzEGoBUibn1Ml90T5rKw==" />
+      <Download url="Comic Definitions/Penny Arcade.xml" path="/Comic Definitions" size="875" md5sum="pagLvqTveiBJq5OuqX893g==" />
+      <Download url="Comic Definitions/Pon and Zi.xml" path="/Comic Definitions" size="624" md5sum="TWNLhw6F0vRcNlPof6F7Og==" />
+      <Download url="Comic Definitions/Real Life Comics.xml" path="/Comic Definitions" size="593" md5sum="T22Sa5RS3iONr4GvvQWE8g==" />
+      <Download url="Comic Definitions/Sequential Art.xml" path="/Comic Definitions" size="664" md5sum="UnSIevwOY6NzC+cV3RwkpA==" />
+      <Download url="Comic Definitions/ShitHouse.xml" path="/Comic Definitions" size="640" md5sum="StiY1oIzIZ7ftq/VfJKm4g==" />
+      <Download url="Comic Definitions/SlightlyDamned.xml" path="/Comic Definitions" size="726" md5sum="AFY6w8SQqYhkZnNmqUF48g==" />
+      <Download url="Comic Definitions/TwoKinds.xml" path="/Comic Definitions" size="644" md5sum="zQCpYngxoU/AX/xDmZ63KQ==" />
+      <Download url="Comic Definitions/VG Cats.xml" path="/Comic Definitions" size="636" md5sum="oxg/ABfWGANq7poilFmJ6w==" />
+      <Download url="Comic Definitions/XKCD.xml" path="/Comic Definitions" size="1223" md5sum="6d0yIe9k7tuHiO9zIKbmBQ==" />
+      <Download url="XML/WebComicDefinition.xsd" path="/XML" size="5466" md5sum="Z6djH9u8UMiHphcBkcX+xw==" />
+    </Downloads>
+    <Info>http://sierrasoftworks.com/wkd/updates/2500</Info>
+  </Update>
+  <Update version="2.4.0.0" os="Win32" platform="Any" osversion="5.1.0.0">
+    <Name>Web Comic Downloader v2.4.0</Name>
+    <Description>
+      Fixes a crash on Windows XP systems caused by an attempted use of a Windows 7
+      API
+    </Description>
+    <ChangeLog>
+      - Fixed startup crash on Windows XP systems
+    </ChangeLog>
+    <Downloads>
+      <Server name="Sierra Softworks" address="http://sierrasoftworks.com" downloadpath="downloads/wkd/2.4.0.0" />
+      <Download url="WKD.exe" path="/" size="146432" md5sum="XZxLMU7nITIV5/iccFfTww==" />
+      <Download url="XML/XPath.exe" path="/XML" size="9216" md5sum="wPti+EfvcZaXaQFh21ixug==" />
+      <Download url="SierraLib.Analytics.dll" path="/" size="61440" md5sum="V+pnC6nXdTu65y20slu4AA==" />
+      <Download url="SierraLib.Databases.dll" path="/" size="781824" md5sum="Y9dNdXXI9xIQzCWJt0c5ug==" />
+      <Download url="SierraLib.Drawing.dll" path="/" size="29184" md5sum="SBDesF42Jpt4jX6owU30Hw==" />
+      <Download url="SierraLib.IO.dll" path="/" size="382976" md5sum="JUt1bjpCgDCq0fuOvvs9yg==" />
+      <Download url="SierraLib.Net.dll" path="/" size="80896" md5sum="ce44J2kGCyYGk4uupl6Y2Q==" />
+      <Download url="SierraLib.Security.dll" path="/" size="60416" md5sum="AhN0821JHq+Z3pTcKYd9Ow==" />
+      <Download url="SierraLib.UI.dll" path="/" size="357376" md5sum="IDYa4GEC655nc1NgO3W4wQ==" />
+      <Download url="SierraLib.Updates.dll" path="/" size="75776" md5sum="lv3+Rspgsl+WmLcjOq0jKw==" />
+      <Download url="SierraLib.Windows.dll" path="/" size="511488" md5sum="9ztpf6WolY/1l7KpwUU1eA==" />
+      <Download url="XML/SierraLib.IO.dll" path="/XML" size="382976" md5sum="kdRlRz8VG6CVddBpTqigyA==" />
+      <Download url="Comic Definitions/Calvin and Hobbes.xml" path="/Comic Definitions" size="754" md5sum="YSeZWvAz4WS9Mj6p03trkw==" />
+      <Download url="Comic Definitions/Chainsaw Suit.xml" path="/Comic Definitions" size="561" md5sum="cRoQpafOOpv/tt+f5yC+eQ==" />
+      <Download url="Comic Definitions/Ctrl+Alt+Del.xml" path="/Comic Definitions" size="992" md5sum="hMqPI8oaFbiSViM8suG+Dg==" />
+      <Download url="Comic Definitions/Cyanide and Happiness.xml" path="/Comic Definitions" size="600" md5sum="TSXS7J0mCiWQeTiDer2udA==" />
+      <Download url="Comic Definitions/Endless Origami.xml" path="/Comic Definitions" size="836" md5sum="d04ABOGdPn6lovpJmyK0qA==" />
+      <Download url="Comic Definitions/Garfield Minus Garfield.xml" path="/Comic Definitions" size="652" md5sum="++F98CS8m+L7Dad52WL2Iw==" />
+      <Download url="Comic Definitions/Garfield.xml" path="/Comic Definitions" size="726" md5sum="050SYNbf37UBH/ZuYoIMAg==" />
+      <Download url="Comic Definitions/Girl Genius.xml" path="/Comic Definitions" size="595" md5sum="mrPL2pJx0s4vBFBHD/sDkQ==" />
+      <Download url="Comic Definitions/GPF Comics.xml" path="/Comic Definitions" size="588" md5sum="D9OQXq/GGzDxY9wqcOaH+g==" />
+      <Download url="Comic Definitions/Headtrip.xml" path="/Comic Definitions" size="802" md5sum="uUc0Wy373mxrMmtXmngm5Q==" />
+      <Download url="Comic Definitions/I'm My Own Mascot.xml" path="/Comic Definitions" size="754" md5sum="OvOzEGoBUibn1Ml90T5rKw==" />
+      <Download url="Comic Definitions/Penny Arcade.xml" path="/Comic Definitions" size="875" md5sum="pagLvqTveiBJq5OuqX893g==" />
+      <Download url="Comic Definitions/Pon and Zi.xml" path="/Comic Definitions" size="624" md5sum="TWNLhw6F0vRcNlPof6F7Og==" />
+      <Download url="Comic Definitions/Real Life Comics.xml" path="/Comic Definitions" size="593" md5sum="T22Sa5RS3iONr4GvvQWE8g==" />
+      <Download url="Comic Definitions/Sequential Art.xml" path="/Comic Definitions" size="664" md5sum="UnSIevwOY6NzC+cV3RwkpA==" />
+      <Download url="Comic Definitions/ShitHouse.xml" path="/Comic Definitions" size="640" md5sum="StiY1oIzIZ7ftq/VfJKm4g==" />
+      <Download url="Comic Definitions/VG Cats.xml" path="/Comic Definitions" size="636" md5sum="oxg/ABfWGANq7poilFmJ6w==" />
+      <Download url="Comic Definitions/XKCD.xml" path="/Comic Definitions" size="1223" md5sum="6d0yIe9k7tuHiO9zIKbmBQ==" />
+      <Download url="XML/WebComicDefinition.xsd" path="/XML" size="5466" md5sum="Z6djH9u8UMiHphcBkcX+xw==" />
+    </Downloads>
+    <Info>http://sierrasoftworks.com/wkd/updates/2400</Info>
+  </Update>
+  <Update version="2.3.0.0" os="Win32" platform="Any" osversion="5.1.0.0">
+    <Name>Web Comic Downloader v2.3.0</Name>
+    <Description>
+      Fixes issues with setting cookies in comic definitions as well
+      as improving comic definition load performance considerably.
+    </Description>
+    <ChangeLog>
+      - Updated comic definition loading code to improve performance considerably
+      - Fixed a failure to load the cookies for a comic definition
+      - Fixed a slight UI niggle regarding the placement of the instruction text
+      - Fixed an issue with downloading Calvin &amp; Hobbes and Garfield
+      - XPath selectors now allow selection of either attributes or nodes
+    </ChangeLog>
+    <Downloads>
+      <Server name="Sierra Softworks" address="http://sierrasoftworks.com" downloadpath="downloads/wkd/2.3.0.0" />
+      <Download url="WKD.exe" path="/" size="146432" md5sum="0Jiw4Cf8YwI8Jr1kBpq0xw==" />
+      <Download url="XML/XPath.exe" path="/XML" size="9216" md5sum="wPti+EfvcZaXaQFh21ixug==" />
+      <Download url="SierraLib.Analytics.dll" path="/" size="61440" md5sum="9mMaMTdKeRLa9GPHSGjVxA==" />
+      <Download url="SierraLib.Databases.dll" path="/" size="701440" md5sum="KWj6QYot1CT2XTJzQ7Ovig==" />
+      <Download url="SierraLib.Drawing.dll" path="/" size="29184" md5sum="SBDesF42Jpt4jX6owU30Hw==" />
+      <Download url="SierraLib.IO.dll" path="/" size="382976" md5sum="Wmy24x8OmFsKC9KxkNZZjw==" />
+      <Download url="SierraLib.Net.dll" path="/" size="60416" md5sum="VQ4F4T4gksimXgrJyDfXkw==" />
+      <Download url="SierraLib.Security.dll" path="/" size="60416" md5sum="tJiga/zlQZEqx2ape/Ws5g==" />
+      <Download url="SierraLib.UI.dll" path="/" size="358400" md5sum="hI3UAosxW11iyfzXAYQQcA==" />
+      <Download url="SierraLib.Updates.dll" path="/" size="75776" md5sum="zOFdSKOl2K78Y9nBmor7+g==" />
+      <Download url="SierraLib.Windows.dll" path="/" size="511488" md5sum="rmugnW8G+KBbgEbUtLYzwQ==" />
+      <Download url="XML/SierraLib.IO.dll" path="/XML" size="382976" md5sum="kdRlRz8VG6CVddBpTqigyA==" />
+      <Download url="Comic Definitions/Calvin and Hobbes.xml" path="/Comic Definitions" size="754" md5sum="YSeZWvAz4WS9Mj6p03trkw==" />
+      <Download url="Comic Definitions/Chainsaw Suit.xml" path="/Comic Definitions" size="561" md5sum="cRoQpafOOpv/tt+f5yC+eQ==" />
+      <Download url="Comic Definitions/Ctrl+Alt+Del.xml" path="/Comic Definitions" size="992" md5sum="hMqPI8oaFbiSViM8suG+Dg==" />
+      <Download url="Comic Definitions/Cyanide and Happiness.xml" path="/Comic Definitions" size="600" md5sum="TSXS7J0mCiWQeTiDer2udA==" />
+      <Download url="Comic Definitions/Endless Origami.xml" path="/Comic Definitions" size="836" md5sum="d04ABOGdPn6lovpJmyK0qA==" />
+      <Download url="Comic Definitions/Garfield Minus Garfield.xml" path="/Comic Definitions" size="652" md5sum="++F98CS8m+L7Dad52WL2Iw==" />
+      <Download url="Comic Definitions/Garfield.xml" path="/Comic Definitions" size="726" md5sum="050SYNbf37UBH/ZuYoIMAg==" />
+      <Download url="Comic Definitions/Girl Genius.xml" path="/Comic Definitions" size="595" md5sum="mrPL2pJx0s4vBFBHD/sDkQ==" />
+      <Download url="Comic Definitions/GPF Comics.xml" path="/Comic Definitions" size="588" md5sum="D9OQXq/GGzDxY9wqcOaH+g==" />
+      <Download url="Comic Definitions/Headtrip.xml" path="/Comic Definitions" size="802" md5sum="uUc0Wy373mxrMmtXmngm5Q==" />
+      <Download url="Comic Definitions/Penny Arcade.xml" path="/Comic Definitions" size="875" md5sum="pagLvqTveiBJq5OuqX893g==" />
+      <Download url="Comic Definitions/Pon and Zi.xml" path="/Comic Definitions" size="624" md5sum="TWNLhw6F0vRcNlPof6F7Og==" />
+      <Download url="Comic Definitions/Real Life Comics.xml" path="/Comic Definitions" size="593" md5sum="T22Sa5RS3iONr4GvvQWE8g==" />
+      <Download url="Comic Definitions/Sequential Art.xml" path="/Comic Definitions" size="664" md5sum="UnSIevwOY6NzC+cV3RwkpA==" />
+      <Download url="Comic Definitions/ShitHouse.xml" path="/Comic Definitions" size="640" md5sum="StiY1oIzIZ7ftq/VfJKm4g==" />
+      <Download url="Comic Definitions/VG Cats.xml" path="/Comic Definitions" size="636" md5sum="oxg/ABfWGANq7poilFmJ6w==" />
+      <Download url="Comic Definitions/XKCD.xml" path="/Comic Definitions" size="1223" md5sum="6d0yIe9k7tuHiO9zIKbmBQ==" />
+      <Download url="XML/WebComicDefinition.xsd" path="/XML" size="5466" md5sum="Z6djH9u8UMiHphcBkcX+xw==" />
+    </Downloads>
+    <Info>http://sierrasoftworks.com/wkd/updates/2300</Info>
+  </Update>
+  <Update version="2.2.1.0" os="Win32" platform="Any" osversion="5.1.0.0">
+    <Name>Web Comic Downloader v2.2.1</Name>
+    <Description>
+      Replaces much of the outdated update code with newer improved
+      versions, and updates the Analytics libraries to their latest
+      versions.
+    </Description>
+    <ChangeLog>
+      - Updated tracking code to improve stability and functionality
+      - Updated update code to improve stability and performance
+      - Updated crash reporting code
+      - Added Penny Arcade
+      - Added Garfield
+      - Added Calvin &amp; Hobbes
+    </ChangeLog>
+    <Downloads>
+      <Server name="Sierra Softworks" address="http://sierrasoftworks.com" downloadpath="downloads/wkd/2.2.1.0" />
+      <Download url="WKD.exe" path="/" size="150016" md5sum="MEQQiZbLsv12IJ845ycz2w==" />
+      <Download url="SierraLib.Analytics.dll" path="/" size="61440" md5sum="b/3RIUrrby1fx0XmxRnbDQ==" />
+      <Download url="SierraLib.Databases.dll" path="/" size="701440" md5sum="hjz2fO7Xe/M314ogt8g5MQ==" />
+      <Download url="SierraLib.Drawing.dll" path="/" size="29184" md5sum="SBDesF42Jpt4jX6owU30Hw==" />
+      <Download url="SierraLib.IO.dll" path="/" size="382976" md5sum="jecdyHMOzm4LvgiO9O6KBg==" />
+      <Download url="SierraLib.Net.dll" path="/" size="60416" md5sum="3f+1ze98Q647PfWniGnQdw==" />
+      <Download url="SierraLib.Security.dll" path="/" size="60416" md5sum="7FH9SEUGPLUo3LXYrLu4qQ==" />
+      <Download url="SierraLib.UI.dll" path="/" size="358400" md5sum="mXsmiA3+7Eu0azXC/Cx43g==" />
+      <Download url="SierraLib.Updates.dll" path="/" size="75776" md5sum="iLrxkiCUJYAqvUR0MZJMoA==" />
+      <Download url="SierraLib.Windows.dll" path="/" size="511488" md5sum="LHWg+2jVq0j597ZSpLVg6g==" />
+      <Download url="webpage xml.xml" path="/" size="51400" md5sum="JWon39vtYVwdrBdL2zmQDA==" />
+      <Download url="WKDSettings.xml" path="/" size="402" md5sum="/vmRBBmWA/kmzSfWdUf6Og==" />
+      <Download url="Comic Definitions/Calvin and Hobbes.xml" path="/Comic Definitions" size="689" md5sum="IxC3YlKyv75mnxtEilmECA==" />
+      <Download url="Comic Definitions/Chainsaw Suit.xml" path="/Comic Definitions" size="561" md5sum="cRoQpafOOpv/tt+f5yC+eQ==" />
+      <Download url="Comic Definitions/Ctrl+Alt+Del.xml" path="/Comic Definitions" size="992" md5sum="hMqPI8oaFbiSViM8suG+Dg==" />
+      <Download url="Comic Definitions/Cyanide and Happiness.xml" path="/Comic Definitions" size="600" md5sum="TSXS7J0mCiWQeTiDer2udA==" />
+      <Download url="Comic Definitions/Endless Origami.xml" path="/Comic Definitions" size="836" md5sum="d04ABOGdPn6lovpJmyK0qA==" />
+      <Download url="Comic Definitions/Garfield Minus Garfield.xml" path="/Comic Definitions" size="652" md5sum="++F98CS8m+L7Dad52WL2Iw==" />
+      <Download url="Comic Definitions/Garfield.xml" path="/Comic Definitions" size="661" md5sum="p5YMpmTXb6imVGWX0OCkcg==" />
+      <Download url="Comic Definitions/Girl Genius.xml" path="/Comic Definitions" size="595" md5sum="mrPL2pJx0s4vBFBHD/sDkQ==" />
+      <Download url="Comic Definitions/GPF Comics.xml" path="/Comic Definitions" size="588" md5sum="D9OQXq/GGzDxY9wqcOaH+g==" />
+      <Download url="Comic Definitions/Headtrip.xml" path="/Comic Definitions" size="802" md5sum="uUc0Wy373mxrMmtXmngm5Q==" />
+      <Download url="Comic Definitions/Penny Arcade.xml" path="/Comic Definitions" size="875" md5sum="pagLvqTveiBJq5OuqX893g==" />
+      <Download url="Comic Definitions/Pon and Zi.xml" path="/Comic Definitions" size="624" md5sum="TWNLhw6F0vRcNlPof6F7Og==" />
+      <Download url="Comic Definitions/Real Life Comics.xml" path="/Comic Definitions" size="593" md5sum="T22Sa5RS3iONr4GvvQWE8g==" />
+      <Download url="Comic Definitions/Sequential Art.xml" path="/Comic Definitions" size="664" md5sum="UnSIevwOY6NzC+cV3RwkpA==" />
+      <Download url="Comic Definitions/ShitHouse.xml" path="/Comic Definitions" size="640" md5sum="StiY1oIzIZ7ftq/VfJKm4g==" />
+      <Download url="Comic Definitions/VG Cats.xml" path="/Comic Definitions" size="636" md5sum="oxg/ABfWGANq7poilFmJ6w==" />
+      <Download url="Comic Definitions/XKCD.xml" path="/Comic Definitions" size="1223" md5sum="6d0yIe9k7tuHiO9zIKbmBQ==" />
+      <Download url="XML/WebComicDefinition.xsd" path="/XML" size="5403" md5sum="eIkqG/KHnnBdZ//bR7vpWg==" />
+    </Downloads>
+    <Info>http://sierrasoftworks.com/wkd/updates/2200</Info>
+  </Update>
+  <Update version="2.1.0.0" os="Win32" platform="Any" osversion="5.1.0.0">
+    <Name>Web Comic Downloader v2.1.0</Name>
+    <Description>
+      This update replaces the tracking code to improve functionality
+      and adds Endless Origami to the list of supported comics.
+    </Description>
+    <ChangeLog>
+      - Updated tracking code to improve stability and functionality
+      - Added Endless Origami to the list of supported comics
+    </ChangeLog>
+    <Downloads>
+      <Server name="Sierra Softworks" address="http://sierrasoftworks.com" downloadpath="downloads/wkd/2.1.0.0" />
+      <Download url="WKD.exe" size="156672" md5sum="+s9XJDZRgeg9DSLCkOa3MA==" path="/" />
+      <Download url="XML/XPath.exe" size="8192" md5sum="v9tHIHB2TAppoUr6pL46iQ==" path="/XML/" />
+      <Download url="SierraLib.Analytics.dll" size="59904" md5sum="HCxgZg8Y75OFsWLjwcrMmA==" path="/" />
+      <Download url="SierraLib.Databases.dll" size="59904" md5sum="lYmHZ4JzLwgdMUpKlNqjvg==" path="/" />
+      <Download url="SierraLib.Drawing.dll" size="29184" md5sum="Ob/2SKc8Y6OC+0L1mbkx5g==" path="/" />
+      <Download url="SierraLib.IO.dll" size="437248" md5sum="eybw7lFcyraxsYpQfOVQHQ==" path="/" />
+      <Download url="SierraLib.Security.dll" size="60416" md5sum="UtIyPL1hdKjo5mCqMXBRpg==" path="/" />
+      <Download url="SierraLib.UI.dll" size="358400" md5sum="TIvF/QugOKOIbw7GO53NPw==" path="/" />
+      <Download url="SierraLib.Updates.dll" size="41984" md5sum="ToZlQiJpknqzBqzK7zx3DQ==" path="/" />
+      <Download url="SierraLib.Windows.dll" size="508416" md5sum="LHThI6b1jHneeI0Aa6iGlg==" path="/" />
+      <Download url="SQLite.Interop.dll" size="596992" md5sum="cO2pytgGpbCKbKQPgB7HOg==" path="/" />
+      <Download url="System.Data.SQLite.dll" size="184320" md5sum="fE+Za+6/D9bxV61msiTVJA==" path="/" />
+      <Download url="XML/SierraLib.IO.dll" size="260608" md5sum="av+N21o7yrjjW+H1mGnPdw==" path="/XML/" />
+      <Download url="XML/SierraLib.Windows.dll" size="501760" md5sum="zdHIawMxPsgL3PMkmbXoow==" path="/XML/" />
+      <Download url="Comic Definitions/Chainsaw Suit.xml" size="561" md5sum="cRoQpafOOpv/tt+f5yC+eQ==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Ctrl+Alt+Del.xml" size="992" md5sum="hMqPI8oaFbiSViM8suG+Dg==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Cyanide and Happiness.xml" size="600" md5sum="TSXS7J0mCiWQeTiDer2udA==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Endless Origami.xml" size="836" md5sum="d04ABOGdPn6lovpJmyK0qA==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Garfield Minus Garfield.xml" size="652" md5sum="++F98CS8m+L7Dad52WL2Iw==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Girl Genius.xml" size="595" md5sum="mrPL2pJx0s4vBFBHD/sDkQ==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/GPF Comics.xml" size="588" md5sum="D9OQXq/GGzDxY9wqcOaH+g==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Headtrip.xml" size="802" md5sum="uUc0Wy373mxrMmtXmngm5Q==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Pon and Zi.xml" size="624" md5sum="TWNLhw6F0vRcNlPof6F7Og==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Real Life Comics.xml" size="593" md5sum="T22Sa5RS3iONr4GvvQWE8g==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Sequential Art.xml" size="664" md5sum="UnSIevwOY6NzC+cV3RwkpA==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/ShitHouse.xml" size="640" md5sum="StiY1oIzIZ7ftq/VfJKm4g==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/VG Cats.xml" size="636" md5sum="oxg/ABfWGANq7poilFmJ6w==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/XKCD.xml" size="1223" md5sum="6d0yIe9k7tuHiO9zIKbmBQ==" path="/Comic Definitions/" />
+      <Download url="XML/WebComicDefinition.xsd" size="5403" md5sum="eIkqG/KHnnBdZ//bR7vpWg==" path="/XML/" />
+    </Downloads>
+    <Info>http://sierrasoftworks.com/wkd/updates/2100</Info>
+  </Update>
+  <Update version="2.0.0.0" os="Win32" platform="Any" osversion="5.1.0.0">
+    <Name>Web Comic Downloader v2.0.0</Name>
+    <Description>
+      This update replaces much of Web Comic Downloader's
+      user interface code with code that is faster and less
+      CPU intensive when performing animations.
+    </Description>
+    <ChangeLog>
+      - User interface uses new animations code to reduce CPU
+        usage when running animations
+      - Update code has been revised to allow automatic updates
+        to be performed.
+      - XPath application has been updated to allow the user to
+        enter the web address once the application has been launched.
+      - Update code has been converted to use the same code used in
+        NETKey for the sake of stability and performance.
+      - Looking for Group added to the list of supported web comics.
+      - Added ability to specify cookies for comics in the Comic Definition
+        file.
+      - Fixed Cyanide &amp; Happiness comic definition
+      - Adds support for new comics
+        - General Protection Fault
+        - Real Life Comics
+      - Settings are now stored in AppData to reduce the chances of a crash
+        upon installation
+    </ChangeLog>
+    <Downloads>
+      <Server name="Sierra Softworks" address="http://sierrasoftworks.com" downloadpath="downloads/wkd/2.0.0.0" />
+      <Download url="WKD.exe" size="155136" md5sum="B0x7pujnkL0cR3gZ71mX+w==" />
+      <Download url="SierraLib.Drawing.dll" size="29184" md5sum="wBhYGeHoyMRM/8d/xnQrOQ==" />
+      <Download url="SierraLib.IO.dll" size="435200" md5sum="9JowFNEQPDHqR2uxPmUWEw==" />
+      <Download url="SierraLib.Security.dll" size="60416" md5sum="mKLmHWROiyF5plJx2iVIGQ==" />
+      <Download url="SierraLib.UI.dll" size="358400" md5sum="BfpR8bc++loozHU6PKVZ0Q==" />
+      <Download url="SierraLib.Updates.dll" size="41472" md5sum="yxJ7yjhuzZL+1BmVUJbxpQ==" />
+      <Download url="SierraLib.Windows.dll" size="501760" md5sum="dDeLW/hLFGkiZUAVFXtxqg==" />
+      <Download url="Comic Definitions/Chainsaw Suit.xml" size="561" md5sum="cRoQpafOOpv/tt+f5yC+eQ==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Ctrl+Alt+Del.xml" size="992" md5sum="hMqPI8oaFbiSViM8suG+Dg==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Cyanide and Happiness.xml" size="600" md5sum="TSXS7J0mCiWQeTiDer2udA==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Garfield Minus Garfield.xml" size="652" md5sum="++F98CS8m+L7Dad52WL2Iw==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Girl Genius.xml" size="595" md5sum="mrPL2pJx0s4vBFBHD/sDkQ==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/GPF Comics.xml" size="588" md5sum="D9OQXq/GGzDxY9wqcOaH+g==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Headtrip.xml" size="802" md5sum="uUc0Wy373mxrMmtXmngm5Q==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Pon and Zi.xml" size="624" md5sum="TWNLhw6F0vRcNlPof6F7Og==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Real Life Comics.xml" size="593" md5sum="T22Sa5RS3iONr4GvvQWE8g==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/Sequential Art.xml" size="664" md5sum="UnSIevwOY6NzC+cV3RwkpA==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/ShitHouse.xml" size="640" md5sum="StiY1oIzIZ7ftq/VfJKm4g==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/VG Cats.xml" size="636" md5sum="oxg/ABfWGANq7poilFmJ6w==" path="/Comic Definitions/" />
+      <Download url="Comic Definitions/XKCD.xml" size="1223" md5sum="6d0yIe9k7tuHiO9zIKbmBQ==" path="/Comic Definitions/" />
+      <Download url="XML/XPath.exe" size="8192" md5sum="v9tHIHB2TAppoUr6pL46iQ==" path="/XPath/" />
+      <Download url="XML/SierraLib.IO.dll" size="260608" md5sum="av+N21o7yrjjW+H1mGnPdw==" path="/XPath/" />
+      <Download url="XML/SierraLib.Windows.dll" size="501760" md5sum="zdHIawMxPsgL3PMkmbXoow==" path="/XPath/" />
+    </Downloads>
+    <Info>http://sierrasoftworks.com/wkd/updates/2000</Info>
+  </Update>
+</Updates>

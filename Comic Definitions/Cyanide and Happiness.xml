@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Cyanide &amp; Happiness"/>
+    <Author Value="Kris"/>
+    <Address Value="http://www.explosm.net"/>
+    <FirstComicAddress Value="http://www.explosm.net/comics/15/"/>
+  </Details>
+  <XPath>
+    <Image Value="//img[@alt=&#34;Cyanide and Happiness, a daily webcomic&#34;]/@src"/>
+    <Next Value="//nobr/span/a[text()=&#34;Next &amp;gt;&#34;]/@href"/>
+    <Previous Value="//nobr/span/a[text()=&#34;&amp;lt; Previous&#34;]/@href"/>
+  </XPath>
+</Comic>

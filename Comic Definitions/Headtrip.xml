@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Head Trip"/>
+    <Author Value="Shinga Bussell"/>
+    <Address Value="http://headtripcomics.comicgenesis.com"/>
+    <FirstComicAddress Value="http://headtripcomics.comicgenesis.com/d/20060303.html"/>
+    <LastComicAddress Value="http://headtripcomics.comicgenesis.com"/>
+  </Details>
+  <XPath>
+    <Image Value="//img[@alt=&#34;Comic&#34;]/@src"/>
+    <Next Value="//a[img/@alt=&#34;Next comic&#34;]/@href"/>
+    <Previous Value="//a[img/@alt=&#34;Previous comic&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <Referrer UseComicPath="true"/>
+    <FileNaming Pattern="%Index%"/>
+    <LastComicHandling StopImmediately="false"/>
+  </Advanced>
+</Comic>

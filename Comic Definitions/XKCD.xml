@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="XKCD"/>
+    <Author Value="Randall Munroe"/>
+    <Address Value="http://www.xkcd.com"/>
+    <FirstComicAddress Value="http://www.xkcd.com/1"/>
+    <LastComicAddress Value="#"/>
+  </Details>
+  <XPath>
+    <Image Value="//div[@class=&#34;s&#34;]/img/@src|//div[@class=&#34;s&#34;]/a/img/@src"/>
+    <Next Value="//div[@class=&#34;menuCont&#34;]/ul/li/a[text()=&#34;Next &gt;&#34;]/@href|//div[@class=&#34;menuCont&#34;]/ul/li/a[text()=&#34;Next &amp;gt;&#34;]/@href"/>
+    <Previous Value="//div[@class=&#34;menuCont&#34;]/ul/li/a[text()=&#34;&lt; Prev&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <LastComicHandling StopImmediately="true"/>
+    <FileNaming XPath="//div[@class=&#34;s&#34;]/img/@alt|//div[@class=&#34;s&#34;]/a/img/@alt" Pattern="%Index% - %XPath%"/>
+    <ImageTagging TitlePattern="%XPath%" TitleXPath="//div[@class=&#34;s&#34;]/img/@alt|//div[@class=&#34;s&#34;]/a/img/@alt" DescriptionPattern="%XPath%" DescriptionXPath="//div[@class=&#34;s&#34;]/img/@title|//div[@class=&#34;s&#34;]/a/img/@title"/>
+    <Formats Image="JPG"/>
+  </Advanced>
+</Comic>

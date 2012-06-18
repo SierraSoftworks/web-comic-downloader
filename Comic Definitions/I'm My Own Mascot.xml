@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="I'm My Own Mascot"/>
+    <Author Value="Kevin Bolk"/>
+    <Address Value="http://www.mascotcomic.com/"/>
+    <FirstComicAddress Value="http://www.mascotcomic.com/index.php?strip_id=141"/>
+  </Details>
+  <XPath>
+    <Image Value="//div[@class=&#34;comic&#34;]/img/@src"/>
+    <Next Value="//div[@id=&#34;subsectionnav&#34;]/a[text()=&#34;Next-&amp;gt;&#34;]/@href"/>
+    <Previous Value="//div[@id=&#34;subsectionnav&#34;]/a[text()=&#34;&amp;lt;-Previous&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <FileNaming Pattern="%Index%"/>
+    <PageDownloadOptions UseSafeCode="true"/>
+  </Advanced>
+</Comic>

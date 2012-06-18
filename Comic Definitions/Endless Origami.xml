@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+<Details>
+  <Name Value="Endless Origami"/>
+  <Author Value="Nico"/>
+  <Address Value="http://endlessorigami.com"/>
+  <FirstComicAddress Value="http://endlessorigami.com/?p=24"/>
+</Details>
+<XPath>
+  <Image Value="//div[@class=&#34;comicpane&#34;]/a/img/@src"/>
+  <Next Value="//div[@class=&#34;nav-next&#34;]/a/@href"/>
+  <Previous Value="//div[@class=&#34;nav-previous&#34;]/a/@href"/>
+</XPath>
+  <Advanced>
+    <FileNaming Pattern="%Index% - %XPath%" XPath="//div[@class=&#34;comicpane&#34;]/a/img/@title"/>
+    <ImageTagging TitlePattern="%XPath%" TitleXPath="//div[@class=&#34;comicpane&#34;]/a/img/@title"/>
+    <PageDownloadOptions StopOnMissingImage="false" UseSafeCode="true"/>
+  </Advanced>
+</Comic>

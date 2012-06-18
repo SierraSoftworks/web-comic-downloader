@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Garfield minus Garfield"/>
+    <Author Value="Dan Travors"/>
+    <Address Value="http://garfieldminusgarfield.net"/>
+    <FirstComicAddress Value="http://garfieldminusgarfield.net/post/26270938"/>
+  </Details>
+  <XPath>
+    <Image Value="//div[@class=&#34;photo&#34;]/a/img/@src"/>
+    <Next Value="//div/a[text()=&#34;Next Comic&#34;]/@href"/>
+    <Previous Value="//div/a[text()=&#34;Previous Comic&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <FileNaming Pattern="%Index%"/>
+  </Advanced>
+</Comic>

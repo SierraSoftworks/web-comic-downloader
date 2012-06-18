@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Sequential Art"/>
+    <Author Value="Jolly Jack"/>
+    <Address Value="http://www.collectedcurios.com/sequentialart.php"/>
+    <FirstComicAddress Value="http://www.collectedcurios.com/sequentialart.php?s=1"/>
+  </Details>
+  <XPath>
+    <Image Value="//img[@id=&#34;strip&#34;]/@src"/>
+    <Next Value="//a[img/@title=&#34;Forward one&#34;]/@href"/>
+    <Previous Value="//a[img/@title=&#34;Back one&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <FileNaming Pattern="%Index% - %ImageName%"/>
+  </Advanced>
+</Comic>

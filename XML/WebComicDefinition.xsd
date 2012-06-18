@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WebComicDefinition"
+    targetNamespace="http://www.sierrasoftworks.com/WebComicDownloader"
+    elementFormDefault="qualified"
+    xmlns="http://www.sierrasoftworks.com/WebComicDownloader"
+    xmlns:mstns="http://www.sierrasoftworks.com/WebComicDownloader"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="Comic">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Details">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name">
+                <xs:complexType>
+                  <xs:attribute name="Value" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Author">
+                <xs:complexType>
+                  <xs:attribute name="Value" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Address">
+                <xs:complexType>
+                  <xs:attribute name="Value" type="xs:anyURI"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FirstComicAddress">
+                <xs:complexType>
+                  <xs:attribute name="Value" type="xs:anyURI"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="LastComicAddress" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute name="Value" type="xs:anyURI"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="XPath">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Image">
+                <xs:complexType>
+                  <xs:attribute name="Value" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Next">
+                <xs:complexType>
+                  <xs:attribute name="Value" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Previous">
+                <xs:complexType>
+                  <xs:attribute name="Value" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Advanced" minOccurs="0">
+          <xs:complexType>
+            <xs:all minOccurs="0">
+              <xs:element name="Referrer" minOccurs ="0">
+                <xs:complexType>
+                  <xs:attribute name="UseComicPath" type="xs:boolean"/>
+                  <xs:attribute name="CustomPath" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="FileNaming" minOccurs ="0">
+                <xs:complexType>
+                  <xs:attribute name="XPath" type="xs:string" default=""/>
+                  <xs:attribute name="Pattern" type="xs:string" default="%Index% - %ImageName%"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="LastComicHandling" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute name="StopImmediately" default="false"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="PageDownloadOptions" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute name="UseSafeCode" default="true"/>
+                  <xs:attribute name="StopOnMissingImage" default="true"/>
+                  <xs:attribute name="UserAgent" default=""/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ImageTagging" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute name="TitlePattern" default="%ImageName%"/>
+                  <xs:attribute name="TitleXPath" default=""/>
+                  <xs:attribute name="DescriptionPattern" default="Image Number: %Index%"/>
+                  <xs:attribute name="DescriptionXPath" default=""/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Formats" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute name="Image" default="Original" type="ImageFormat"/>
+                </xs:complexType>                
+              </xs:element>
+              <xs:element name="Cookies" minOccurs="0" maxOccurs="1">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Cookie" type="Cookie" minOccurs="1" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element> 
+            </xs:all>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="ImageFormat">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PNG"/>
+      <xs:enumeration value="JPG"/>
+      <xs:enumeration value="BMP"/>
+      <xs:enumeration value="Original"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="Cookie">
+    <xs:attribute name="Name" type="xs:string"/>
+    <xs:attribute name="Value" type="xs:string"/>
+  </xs:complexType>
+</xs:schema>
+

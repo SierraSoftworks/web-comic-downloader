@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name  Value="Looking for Group"/>
+    <Author Value="Blind Ferret"/>
+    <Address Value="http://www.lfgcomic.com"/>
+    <FirstComicAddress Value="http://www.lfgcomic.com/page/1"/>
+    <LastComicAddress Value="#"/>
+  </Details>
+  <XPath>
+    <Image Value="//div[id=&#34;comic&#34;]/img/@src"/>
+    <Next Value="//a[id=&#34;nav-next&#34;]/@href"/>
+    <Previous Value="//a[id=&#34;nav-prev&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <FileNaming Pattern="%Index%"/>
+    <LastComicHandling StopImmediately="true"/>
+    <PageDownloadOptions UseSafeCode="true"/>
+    <Referrer UseComicPath="true"/>
+  </Advanced>
+</Comic>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="TwoKinds"/>
+    <Author Value="Tom Fischbach"/>
+    <Address Value="http://twokinds.keenspot.com"/>
+    <FirstComicAddress Value="http://twokinds.keenspot.com/archive.php?p=1"/>
+  </Details>
+  <XPath>
+    <Image Value="//img[@class=&#34;ksc&#34;]/@src"/>
+    <Next Value="//a[img[@class=&#34;ksc&#34;]]/@href"/>
+    <Previous Value=""/>
+  </XPath>
+  <Advanced>
+    <PageDownloadOptions UseSafeCode="true" StopOnMissingImage="false"/>
+    <FileNaming Pattern="%Index%"/>
+  </Advanced>
+</Comic>

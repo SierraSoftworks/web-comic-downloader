@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SettingsSchema"
+    targetNamespace="http://www.sierrasoftworks.com/settings"
+    elementFormDefault="qualified"
+    xmlns="http://www.sierrasoftworks.com/settings"
+    xmlns:mstns="http://www.sierrasoftworks.com/SettingsSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="Settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Setting" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="Name" type="xs:string"/>
+            <xs:attribute name="Value" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="Version"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="Version">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]+(\.[0-9]+)?(\.[0-9]+)?(\.[0-9]+)?"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

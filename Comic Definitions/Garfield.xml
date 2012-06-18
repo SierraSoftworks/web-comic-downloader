@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Garfield"/>
+    <Author Value="Jim Davis"/>
+    <Address Value="http://www.gocomics.com/garfield"/>
+    <FirstComicAddress Value="http://www.gocomics.com/garfield/1978/06/19"/>
+  </Details>
+  <XPath>
+    <Image Value="//img[@class=&#34;strip&#34;]/@src"/>
+    <Next Value="//a[@class=&#34;next&#34;]/@href"/>
+    <Previous Value="//a[@class=&#34;prev&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <Referrer UseComicPath="true"/>
+    <Formats Image="PNG"/>
+    <FileNaming Pattern="%Index% - %XPath%" XPath="//ul[@class=&#34;feature-nav&#34;]/li[1]"/>
+  </Advanced>
+</Comic>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Pon &amp; Zi"/>
+    <Author Value="Jeff Thomas"/>
+    <Address Value="http://www.ponandzi.com"/>
+    <FirstComicAddress Value="http://www.ponandzi.com/image.php?img=1"/>
+  </Details>
+  <XPath>
+    <Image Value="//tr/td/img/@src"/>
+    <Next Value="//a[text()=&#34;Next&#34;]/@href"/>
+    <Previous Value="//a[text()=&#34;Back&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <PageDownloadOptions UseSafeCode="true"/>
+    <FileNaming Pattern="%Index%"/>
+  </Advanced>
+</Comic>

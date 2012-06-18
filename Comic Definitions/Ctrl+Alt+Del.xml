@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Ctrl+Alt+Del"/>
+    <Author Value="Tim Buckley"/>
+    <Address Value="http://www.cad-comic.com/cad"/>
+    <FirstComicAddress Value="http://www.cad-comic.com/cad/20021023"/>
+    <LastComicAddress Value="/cad/"/>
+  </Details>
+  <XPath>
+    <Image Value="//div[@id=&#34;content&#34;]/img/@src"/>
+    <Next Value="//div[@id=&#34;content&#34;]/div[@class=&#34;navigation&#34;]/a[text()=&#34;Next&#34;]/@href"/>
+    <Previous Value="//div[@id=&#34;content&#34;]/div[@class=&#34;navigation&#34;]/a[text()=&#34;Back&#34;]/@href"/>
+  </XPath>
+  <Advanced>
+    <FileNaming XPath="//div[@id=&#34;content&#34;]/img/@alt" Pattern="%Index% - %XPath%"/>
+    <PageDownloadOptions UseSafeCode="true"/>
+    <ImageTagging TitlePattern="%XPath%" TitleXPath="//div[@id=&#34;content&#34;]/img/@alt"/>
+    <Formats Image="JPG"/>
+    
+  </Advanced>
+</Comic>

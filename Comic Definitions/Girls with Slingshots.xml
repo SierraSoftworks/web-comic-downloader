@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="Girls with Slingshots"/>
+    <Author Value="Danielle Corsetto"/>
+    <Address Value="http://www.girlswithslingshots.com"/>
+    <FirstComicAddress Value="http://www.girlswithslingshots.com/comic/gws1/"/>
+  </Details>
+  <XPath>
+    <Image Value="//div[@id=&#34;comic&#34;]/img/@src"/>
+    <Next Value="//div[@id=&#34;nav-next&#34;]/a/@href"/>
+    <Previous Value="//div[@id=&#34;nav-previous&#34;]/a/@href"/>
+  </XPath>
+  <Advanced>
+    <FileNaming XPath="//div[@id=&#34;comic&#34;]/img/@alt" Pattern="%Index% - %XPath%"/>
+    <ImageTagging TitlePattern="%XPath%" TitleXPath="//div[@id=&#34;comic&#34;]/img/@alt" DescriptionPattern="%XPath%" DescriptionXPath="//div[@id=&#34;comic&#34;]/img/@title" />
+    <Formats Image="JPG"/>
+  </Advanced>
+</Comic>

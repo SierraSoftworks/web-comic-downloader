@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Updates xmlns="http://www.sierrasoftworks.com/libUpdate">
+  <Latest version="2.1.0.0">
+    <Name>WKD Web Comic Downloader v2.1</Name>
+    <Description>
+      This update replaces the tracking code to improve functionality
+      and adds Endless Origami to the list of supported comics.
+    </Description>
+    <ChangeLog>
+      - Updated tracking code to improve stability and functionality
+      - Added Endless Origami to the list of supported comics
+    </ChangeLog>
+    <Download>http://www.sierrasoftworks.com/downloads/wkd/WKDSetup.exe</Download>
+    <Info>http://www.sierrasoftworks.com/wkd/updates/2100</Info>
+  </Latest>
+
+  <Archive>
+    <Update version="2.0.0.0">
+      <Name>WKD Web Comic Downloader v2.0</Name>
+      <Description>
+        This update replaces much of Web Comic Downloader's
+        user interface code with code that is faster and less
+        CPU intensive when performing animations.
+      </Description>
+      <ChangeLog>
+        - User interface uses new animations code to reduce CPU
+        usage when running animations
+        - Update code has been revised to allow automatic updates
+        to be performed.
+        - XPath application has been updated to allow the user to
+        enter the web address once the application has been launched.
+        - Update code has been converted to use the same code used in
+        NETKey for the sake of stability and performance.
+        - Looking for Group added to the list of supported web comics
+        - Added support for HTTP Cookies
+        - Fixed Cyanide &amp; Happiness comic definition
+      </ChangeLog>
+      <Download>http://www.sierrasoftworks.com/downloads/wkd/WKDSetup.exe</Download>
+      <Info>http://www.sierrasoftworks.com/wkd/updates/2000</Info>
+    </Update>
+    <Update version="1.8.0.0">
+      <Name>WKD Web Comic Downloader v1.8</Name>
+      <Description>
+        Updates certain comic definitions to make use of the new
+        Image Tags functionality.
+      </Description>
+      <ChangeLog>
+        - Adds Image Tags functionality to add extra information to
+        image files. This can include a name for the image and a
+        description.
+        - Adds the ability to force a comic to be saved in a specified
+        image format. This is required due to the lack of EXIF tag support in
+        PNG images.
+        - Updates certain comic definitions to support this new functionality.
+        - XKCD will now save the hover text in the image's description field.
+        - Ctrl+Alt+Del will save the title of the comic in the image's title field.
+        - Updates the web comic definition to allow new features to be controlled
+        through web comic files.
+        - Fixes a possible bug in the way file naming XPath expressions are calculated
+        which could cause them to search for a "src" attribute if no attribute was
+        found or specified.
+        - File name XPaths and Image Tag XPaths will now handle &amp;#code; character
+        codes correctly.
+      </ChangeLog>
+      <Download>http://www.sierrasoftworks.com/downloads/wkd/WKD.7z</Download>
+      <Info>http://www.sierrasoftworks.com/wkd/updates/1800</Info>
+    </Update>
+    <Update version="1.7.0.0">
+      <Name>WKD Web Comic Downloader v1.7</Name>
+      <Description>
+        Fixes a problem on Windows XP where the dialog box which would
+        appear if no web comic was selected would cause a crash.
+        Also updates all the information dialog boxes to be more descriptive
+        and improves error checking for web comic definitions.
+      </Description>
+      <ChangeLog>
+        - Fixes a problem on Windows XP (and earlier) systems which
+        would result in an error message being displayed to the
+        user at launch if a new update was available.
+        - Fixes a problem where if an XPath query in the naming scheme
+        contained invalid file characters it would cause the download
+        to stop.
+        - Fixes a problem on Ctrl+Alt+Del where in some cases it would
+        fail to download the main page. Now uses safe download code.
+        - Updates all information dialog boxes to be more informative.
+        - Application should no longer crash if a corrupt or invalid
+        Web Comic Definition is supplied.
+        - The application will now restart if it crashes after notifying
+        the user.
+        - Better scalability of message boxes based on OS version.
+        - Prevents a crash caused by the wrong message box type being
+        opened on Windows XP and earlier systems if no comic was selected
+        and the download button was pressed.
+      </ChangeLog>
+      <Download>http://www.sierrasoftworks.com/downloads/wkd/WKD_170.7z</Download>
+      <Info>http://www.sierrasoftworks.com/wkd/updates/1700</Info>
+    </Update>
+    <Update version="1.6.0.0">
+      <Name>WKD Web Comic Downloader v1.6</Name>
+      <Description>
+        Fixes a problem on Windows XP where the update available
+        dialog would cause an error message to be displayed.
+      </Description>
+      <ChangeLog>
+        - Fixes a problem on Windows XP (and earlier) systems which
+        would result in an error message being displayed to the
+        user at launch if a new update was available.
+        - Changes the new update dialog to the standard Windows XP
+        message box on Windows XP and lower systems to fix the
+        above issue.
+        - Adds error reporting code to the application to aid in the
+        diagnosis of future problems.
+      </ChangeLog>
+      <Download>http://www.sierrasoftworks.com/downloads/wkd/WKD_160.7z</Download>
+      <Info>http://www.sierrasoftworks.com/wkd/updates/1600</Info>
+    </Update>
+    <Update version="1.5.0.0">
+      <Name>WKD Web Comic Downloader v1.5</Name>
+      <Description>
+        Adds Pon &amp; Zi and SH*THOUSE to the comic list as well
+        as fixing a bug which resulted in the last character of the
+        image's extension replacing the last character in the image's
+        name.
+      </Description>
+      <ChangeLog>
+        - Fixed a problem in the relative link code which could result
+        in a path which had a duplicate protocol prefix. This was caused
+        when the application attempted to either get a parent path or
+        the root path where the result was the passed parameter. This
+        would cause the function to not remove the protocol from the
+        begining resulting in a duplicate.
+        - Added Pon &amp; Zi to the comic list
+        - Fixed a possible problem with Head Trip by adding a LastComicAddress
+        and explicitly telling it to download the comic on that last address.
+        - Added SH*THOUSE to the comic list
+        - Tested and confirmed that all relative path code functions correctly
+        (Including ../)
+        - Fixed an issue with generated file names resulting in the last character
+        of the name being replaced with the last character of the file extension.
+      </ChangeLog>
+      <Download>http://www.sierrasoftworks.com/downloads/wkd/WKD_150.7z</Download>
+      <Info>http://www.sierrasoftworks.com/wkd/updates/1500</Info>
+    </Update>
+    <Update version="1.4.0.0">
+      <Name>WKD Web Comic Downloader v1.4</Name>
+      <Description>
+        Fixes a few small problems with certain comics including
+        XKCD as well as adding new features to the Comic Defintions
+        specification.
+      </Description>
+      <ChangeLog>
+        - Fixed a problem where comics that used &amp;gt; to represent
+        &gt; would fail to match on XPath searches. (Temporary fix)
+        - Fixed by adding an alternative search XPath which uses
+        &amp;amp;gt; in the place of &amp;gt;
+        - Added a "LastComicHandling" section to the advanced options
+        in Comic Defintions allowing you to specify whether or not
+        the application should download the image that appears on
+        the page after the last comic link.
+        For example:
+        XKCD uses "#" as a placeholder for when you have reached
+        the last comic. You would specify "true" for the
+        "StopImmediately" attribute to prevent the application from
+        downloading a duplicate image for the next page.
+        - Added a "PageDownloadOptions" section to the advanced options
+        in Comic Defintions allowing you to specify the code that should
+        be used for downloading pages. Safe Code does not display the
+        download progress for the page that is downloading but may be
+        less likely to fail half way through downloading the page.
+      </ChangeLog>
+      <Download>http://www.sierrasoftworks.com/downloads/wkd/WKD_140.7z</Download>
+      <Info>http://www.sierrasoftworks.com/wkd/updates/1400</Info>
+    </Update>
+    <Update version="1.3.0.0">
+      <Name>WKD Web Comic Downloader v1.3</Name>
+      <Description>
+        Fixes a few small problems with certain comics as well
+        as implementing a new code system for handling relative
+        links. Should now be able to handle ../../image.jpg without
+        any problems.
+      </Description>
+      <ChangeLog>
+        - New relative link handling code which supports
+        - "/" (Go to root)
+        - "./" (Current Directory)
+        - "../" (Current Directory's parent) [Recursive support]
+        - Fix for VGCats
+        - Removed Penny Arcade temporarily due to a problem downloading
+        comics. Will be added again when this problem has been fixed.
+        - Removed Questionable Content due to a problem downloading comics.
+        Will be added again when this problem has been fixed.
+      </ChangeLog>
+      <Download>http://www.sierrasoftworks.com/downloads/wkd/WKD_130.7z</Download>
+      <Info>http://www.sierrasoftworks.com/wkd/updates/1300</Info>
+    </Update>
+    <Update version="1.2.0.0">
+      <Name>WKD Web Comic Downloader v1.2</Name>
+      <Description>
+        Fixes problems when servers time out as well as issues
+        with links that had spaces in them.
+      </Description>
+      <ChangeLog>
+        - Fix for Ctrl+Alt+Del where the application would not
+        stop attempting to download the latest comic.
+        (Fixed in definition file)
+        - Fix for Cyanide and Happiness where servers would return
+        a 404 Not Found error on some images due to the application
+        not replacing spaces with %20.
+        - Added rounded corners to certain UI elements for better
+        flow
+        - Added options for setting whether standby is disabled while
+        downloading.
+        - Added a settings page
+        - Fixed a problem with comic pages which did not contain an image
+        (Cyanide and Happiness often post youtube videos instead)
+        - Fixed a problem where comics who's latest image appeared on
+        the root comic page would result in the application never being
+        able to update the comic. (May cause updates to download 2 current
+        images before begining the update)
+        - Completely new download code which should result in better stability
+        and no longer relies on error catching (slow) to handle possible problems.
+        - Fixed a problem with the Garfield Minus Garfield definition file
+      </ChangeLog>
+      <Download>http://www.sierrasoftworks.com/downloads/wkd/WKD.7z</Download>
+      <Info>http://www.sierrasoftworks.com/wkd/updates/1200</Info>
+    </Update>
+    <Update version="1.1.0.0">
+      <Name>WKD Web Comic Downloader v1.1</Name>
+      <Description>
+        ----Major Update----
+        Fixes numerous issues with poorly formatted HTML in certain
+        web pages. (Previous version only supported XHTML). Also adds
+        a workaround for HotSPOT Anti-Hotlinking protection.
+        Not to mention major functionality improvements and bug fixes.
+        Comics downloaded using v1.0.0 will not work with this version.
+      </Description>
+      <ChangeLog>
+        - Fixes issues with poorly formatted HTML on pages
+        - Adds a workaround for HotSPOT Anti-HotLinking which could prevent
+        the application from downloading certain comics.
+        - Fixes problems with the application not stopping the download
+        of comics after the last page has been reached. May also reduce
+        bandwidth usage by not reloading the last page.
+        - Better UI responsiveness making use of new movement code.
+        - Revised comic definition format
+        - Allows you to specify naming patterns, XPaths for accquiring
+        file names as well as custom referral values.
+        - Will prevent your system from entering standby while downloading
+        - Stores your comics folder and the last downloaded comic in a settings
+        file for future use. This makes selecting comics (after initial setup)
+        considerably faster.
+        - New UI Layout for better aesthetics
+        - Remaining time estimate now functions correctly.
+        - Includes many more comic definition files
+        - Chainsaw Suit
+        - Ctrl+Alt+Del
+        - Cyanide and Happiness
+        - Garfield minus Garfield
+        - Girl Genius
+        - Head Trip
+        - Penny Arcade
+        - Questionable Content
+        - Sequential Art
+        - VG Cats
+        - XKCD
+        - Adds update checking code (Will not automatically update
+        application files like ArmA 2 Mod Launcher)
+      </ChangeLog>
+      <Download>http://www.sierrasoftworks.com/downloads/wkd/WKD_110.7z</Download>
+      <Info>http://www.sierrasoftworks.com/wkd/updates/1100</Info>
+    </Update>
+    <Update version="1.0.0.0">
+      <Name>WKD Web Comic Downloader v1.0</Name>
+      <Description>
+        This application allows you to download large numbers of
+        web comics easily to your computer.
+        Unlike other applications this one makes use of XPath
+        expressions to locate the images which allows it to function
+        with web comics that do not name their images sequentially.
+      </Description>
+      <ChangeLog>
+        - No changes
+      </ChangeLog>
+      <Download>http://www.sierrasoftworks.com/downloads/wkd/WKD_100.7z</Download>
+      <Info>http://www.sierrasoftworks.com/wkd</Info>
+    </Update>
+  </Archive>
+</Updates>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+  <Details>
+    <Name Value="General Protection Fault"/>
+    <Author Value="Jeffery T Darlington"/>
+    <Address Value="http://www.gpf-comics.com"/>
+    <FirstComicAddress Value="http://www.gpf-comics.com/archive/1998/11/02"/>
+  </Details>
+  <XPath>
+    <Image Value="//div[@class=&#34;content&#34;]/p[2]/img/@src"/>
+    <Next Value="//a[img/@alt=&#34;Next Comic&#34;]/@href"/>
+    <Previous Value="//a[img/@alt=&#34;Previous Comic&#34;]/@href"/>
+  </XPath>
+</Comic>
