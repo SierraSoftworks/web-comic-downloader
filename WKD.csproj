@@ -266,35 +266,31 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\SierraLib\SierraLib.Analytics\SierraLib.Analytics.csproj">
+    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Analytics\SierraLib.Analytics.csproj">
       <Project>{E217E828-FE48-4384-BAF8-217641E17154}</Project>
       <Name>SierraLib.Analytics</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SierraLib\SierraLib.Databases\SierraLib.Databases.csproj">
+    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Databases\SierraLib.Databases.csproj">
       <Project>{46C2FAE6-9C37-44E9-AE0E-7CB2A8E11330}</Project>
       <Name>SierraLib.Databases</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SierraLib\SierraLib.IO\SierraLib.IO.csproj">
+    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.IO\SierraLib.IO.csproj">
       <Project>{6E3964DA-AB7B-4650-8E07-D43D9C7FE8AB}</Project>
       <Name>SierraLib.IO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SierraLib\SierraLib.Net\SierraLib.Net.csproj">
+    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Multithreading\SierraLib.Multithreading.csproj">
+      <Project>{E8607A83-1C81-4D88-8E98-3E6A3DC00E68}</Project>
+      <Name>SierraLib.Multithreading</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Net\SierraLib.Net.csproj">
       <Project>{6197BE34-BF99-48D7-A58B-7ACD81206CC8}</Project>
       <Name>SierraLib.Net</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SierraLib\SierraLib.Security\SierraLib.Security.csproj">
-      <Project>{13F2382D-9F9E-4127-95C2-656C5678727F}</Project>
-      <Name>SierraLib.Security</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SierraLib\SierraLib.UI\SierraLib.UI.csproj">
-      <Project>{104D4942-3A12-4FF5-9F9B-BFA70F8FE835}</Project>
-      <Name>SierraLib.UI</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SierraLib\SierraLib.Updates\SierraLib.Updates.csproj">
+    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Updates\SierraLib.Updates.csproj">
       <Project>{AC7CD073-FFB7-4356-AF6B-B5EDC039657F}</Project>
       <Name>SierraLib.Updates</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\SierraLib\SierraLib.Windows\SierraLib.Windows.csproj">
+    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Windows\SierraLib.Windows.csproj">
       <Project>{CAC707A0-C944-4DA1-85B4-6F959EB618D8}</Project>
       <Name>SierraLib.Windows</Name>
     </ProjectReference>
