@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Comic xmlns="http://www.sierrasoftworks.com/WebComicDownloader">
+    <Details>
+        <Name Value="Table Titans"/>
+        <Author Value="Scott R. Kurtz"/>
+        <Address Value="http://tabletitans.com/"/>
+        <FirstComicAddress Value="http://tabletitans.com/comic/mines-of-madness-page-1"/>
+    </Details>
+    <XPath>
+        <Image Value="//section[@class=&#34;comic row&#34;]/img/@src"/>
+        <Next Value="//a[text()=&#34;Next &amp;gt;&#34;]/@href"/>
+        <Previous Value="//a[text()=&#34;&amp;lt; Previous&#34;]/@href"/>
+    </XPath>
+    <Advanced>
+        <PageDownloadOptions UseSafeCode="true"/>
+        <FileNaming Pattern="%Index% - %XPath%" XPath="//section[@class=&#34;comic row&#34;]/img/@title"/>
+    </Advanced>
+</Comic>
