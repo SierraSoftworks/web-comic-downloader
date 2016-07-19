@@ -13,22 +13,35 @@
     </ChangeLog>
     <Downloads>
       <Server name="Sierra Softworks" address="http://sierrasoftworks.com" downloadpath="downloads/wkd/2.7.0.0" />
-      <Download url="WKD.exe" path="/" size="146432" md5sum="ir+QhF4rXGi7LZp+alzksg==" />
+      <Download url="WKD.exe" path="/" size="141824" md5sum="BN8Tqhl+xZ38rW7pYRro+w==" />
+      <Download url="app.publish/WKD.exe" path="/app.publish" size="141824" md5sum="BN8Tqhl+xZ38rW7pYRro+w==" />
       <Download url="XML/XPath.exe" path="/XML" size="9216" md5sum="wPti+EfvcZaXaQFh21ixug==" />
-      <Download url="SierraLib.Analytics.dll" path="/" size="61440" md5sum="+wAMRUNDKsKAV2/7ZJpvlQ==" />
-      <Download url="SierraLib.Databases.dll" path="/" size="781824" md5sum="DoNmO5fWQJt0+t2mKb2XbQ==" />
-      <Download url="SierraLib.Drawing.dll" path="/" size="29184" md5sum="SBDesF42Jpt4jX6owU30Hw==" />
-      <Download url="SierraLib.IO.dll" path="/" size="382976" md5sum="jdowtzBl5HKjAg6escEadQ==" />
-      <Download url="SierraLib.Net.dll" path="/" size="67584" md5sum="axPFraDJsIKrwwzVy607Lw==" />
-      <Download url="SierraLib.Security.dll" path="/" size="60416" md5sum="DSWE0Hxf88V/qbY5QGzRzQ==" />
-      <Download url="SierraLib.UI.dll" path="/" size="357376" md5sum="WewxZ+t1nW4G28P6bTA7yQ==" />
-      <Download url="SierraLib.Updates.dll" path="/" size="75776" md5sum="twxZLPIPjqyi+RDrJpFrig==" />
-      <Download url="SierraLib.Windows.dll" path="/" size="511488" md5sum="kNhDjRBzYMyDSA+/izEYqw==" />
+      <Download url="Afterthought.dll" path="/" size="262144" md5sum="HhIOToukBy/5mCBJgf3LBQ==" />
+      <Download url="Akavache.Portable.dll" path="/" size="46592" md5sum="U7XtHQM591OI9RJNugoa6w==" />
+      <Download url="MySql.Data.dll" path="/" size="457728" md5sum="JWHuM8TQVoi232y7DeIc8A==" />
+      <Download url="Newtonsoft.Json.dll" path="/" size="430592" md5sum="tb3HkkYgSNfpAYTqw0z9ew==" />
+      <Download url="RestSharp.dll" path="/" size="162816" md5sum="eCPA3P4Wn/GpIH9Bd0AFqA==" />
+      <Download url="SierraLib.Analytics.dll" path="/" size="60416" md5sum="TzHF+5A1DGbb4fz3M4EkHQ==" />
+      <Download url="SierraLib.CSharp.dll" path="/" size="37888" md5sum="aOZ5abY0TM36DzIfQeaSdQ==" />
+      <Download url="SierraLib.Databases.dll" path="/" size="701440" md5sum="RzFLh+44vAiurh1HEjJiLw==" />
+      <Download url="SierraLib.Drawing.dll" path="/" size="29184" md5sum="VIct4s+jyYhTNWSsODK3+w==" />
+      <Download url="SierraLib.IO.dll" path="/" size="432640" md5sum="vcLHKMfGIDmuv3YipuWo/g==" />
+      <Download url="SierraLib.Multithreading.dll" path="/" size="14336" md5sum="gwd6DhwLwRx1ErFJu8B7Jg==" />
+      <Download url="SierraLib.Net.dll" path="/" size="56320" md5sum="Z8Aw2xTu0dcsbBeExHJTMg==" />
+      <Download url="SierraLib.Security.dll" path="/" size="58880" md5sum="d3sG1cPAw3aeM5gmDNWrEA==" />
+      <Download url="SierraLib.UI.dll" path="/" size="345088" md5sum="vlaadvAkLwCr0OUjZMlhWw==" />
+      <Download url="SierraLib.Updates.dll" path="/" size="83456" md5sum="/rq7dEpLlKafjsvAZ3ChRg==" />
+      <Download url="SierraLib.Windows.dll" path="/" size="486912" md5sum="WEMOq7vJwPTVUrv7VBHPkg==" />
+      <Download url="System.Reactive.Core.dll" path="/" size="121416" md5sum="mKw1fhV7B3Ict8CvVL8sbg==" />
+      <Download url="System.Reactive.Interfaces.dll" path="/" size="24136" md5sum="P+gIUjjgLNyXAxl0msJnRA==" />
+      <Download url="System.Reactive.Linq.dll" path="/" size="692296" md5sum="PXTKk4bFAuPaVsSuEo0p9A==" />
+      <Download url="System.Reactive.PlatformServices.dll" path="/" size="37960" md5sum="b+9MmeD8DX4U29lPt6QfOA==" />
       <Download url="XML/SierraLib.IO.dll" path="/XML" size="382976" md5sum="kdRlRz8VG6CVddBpTqigyA==" />
+      <Download url="RestSharp.xml" path="/" size="134233" md5sum="xKQ1eKtSvYkM3eMWMrWZJQ==" />
       <Download url="Comic Definitions/Calvin and Hobbes.xml" path="/Comic Definitions" size="754" md5sum="YSeZWvAz4WS9Mj6p03trkw==" />
       <Download url="Comic Definitions/Chainsaw Suit.xml" path="/Comic Definitions" size="561" md5sum="cRoQpafOOpv/tt+f5yC+eQ==" />
       <Download url="Comic Definitions/Ctrl+Alt+Del.xml" path="/Comic Definitions" size="992" md5sum="hMqPI8oaFbiSViM8suG+Dg==" />
-      <Download url="Comic Definitions/Cyanide and Happiness.xml" path="/Comic Definitions" size="600" md5sum="TSXS7J0mCiWQeTiDer2udA==" />
+      <Download url="Comic Definitions/Cyanide and Happiness.xml" path="/Comic Definitions" size="712" md5sum="Z+Ebipvpcdw1Q5JOu4ofXA==" />
       <Download url="Comic Definitions/Endless Origami.xml" path="/Comic Definitions" size="836" md5sum="d04ABOGdPn6lovpJmyK0qA==" />
       <Download url="Comic Definitions/Garfield Minus Garfield.xml" path="/Comic Definitions" size="652" md5sum="++F98CS8m+L7Dad52WL2Iw==" />
       <Download url="Comic Definitions/Garfield.xml" path="/Comic Definitions" size="726" md5sum="050SYNbf37UBH/ZuYoIMAg==" />
@@ -37,6 +50,8 @@
       <Download url="Comic Definitions/GPF Comics.xml" path="/Comic Definitions" size="588" md5sum="D9OQXq/GGzDxY9wqcOaH+g==" />
       <Download url="Comic Definitions/Headtrip.xml" path="/Comic Definitions" size="802" md5sum="uUc0Wy373mxrMmtXmngm5Q==" />
       <Download url="Comic Definitions/I'm My Own Mascot.xml" path="/Comic Definitions" size="754" md5sum="OvOzEGoBUibn1Ml90T5rKw==" />
+      <Download url="Comic Definitions/Looking For Group.xml" path="/Comic Definitions" size="763" md5sum="EF9JMy1SONQkRnTS7WVskg==" />
+      <Download url="Comic Definitions/Megatokyo.xml" path="/Comic Definitions" size="812" md5sum="bG1mhXzLOAMivMon5Zbe9Q==" />
       <Download url="Comic Definitions/Penny Arcade.xml" path="/Comic Definitions" size="875" md5sum="pagLvqTveiBJq5OuqX893g==" />
       <Download url="Comic Definitions/Pon and Zi.xml" path="/Comic Definitions" size="624" md5sum="TWNLhw6F0vRcNlPof6F7Og==" />
       <Download url="Comic Definitions/Real Life Comics.xml" path="/Comic Definitions" size="593" md5sum="T22Sa5RS3iONr4GvvQWE8g==" />
