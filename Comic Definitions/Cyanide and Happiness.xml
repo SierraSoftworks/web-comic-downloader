@@ -7,8 +7,11 @@
     <FirstComicAddress Value="http://www.explosm.net/comics/15/"/>
   </Details>
   <XPath>
-    <Image Value="//img[@alt=&#34;Cyanide and Happiness, a daily webcomic&#34;]/@src"/>
-    <Next Value="//nobr/span/a[text()=&#34;Next &amp;gt;&#34;]/@href"/>
-    <Previous Value="//nobr/span/a[text()=&#34;&amp;lt; Previous&#34;]/@href"/>
+    <Image Value="//img[@id=&#34;main-comic&#34;]/@src"/>
+    <Next Value="//a[@class=&#34;next-comic&#34;]/@href|//a[@class=&#34;next-comic &#34;]/@href"/>
+    <Previous Value="//a[@class=&#34;previous-comic&#34;]/@href|//a[@class=&#34;previous-comic &#34;]/@href"/>
   </XPath>
+  <Advanced>
+    <PageDownloadOptions StopOnMissingImage="False"/>
+  </Advanced>
 </Comic>
