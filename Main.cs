@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
 using SierraLib.HTMLParsing;
-using SierraLib.Updates;
+using SierraLib.Analytics;
 using WebcomicDownloader.XMLSearcher;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -22,10 +22,11 @@ using SierraLib;
 using SierraLib.Security;
 using SierraLib.UI;
 using SierraLib.Updates.Automatic;
-using SierraLib.Analytics.GoogleAnalytics;
+using SierraLib.Analytics.Google;
 
 namespace WebcomicDownloader
 {
+    [UniversalAnalytics("UA-9682191-3")]
     public partial class Main : Form
     {
         List<Comic> comics = new List<Comic>();
@@ -60,51 +61,14 @@ namespace WebcomicDownloader
 
             if (!Directory.Exists(Environment.ExpandEnvironmentVariables("%AppData%\\Sierra Softworks\\Web Comic Downloader")))
                 Directory.CreateDirectory(Environment.ExpandEnvironmentVariables("%AppData%\\Sierra Softworks\\Web Comic Downloader"));
-
-            Tracker.CurrentInstance.ProductName = "Web Comic Downloader";
-            Tracker.CurrentInstance.ProductVersion = SierraLib.AssemblyInformation.GetAssemblyVersion().ToString();
-            Tracker.CurrentInstance.StartSession("UA-9682191-3", Environment.ExpandEnvironmentVariables("%AppData%\\Sierra Softworks\\Web Comic Downloader\\analytics.db"), false, 10);
-
+            
             SierraLib.Settings.SettingsFileName = "WKDSettings.xml";
             SierraLib.Settings.SettingsFilePath = Environment.ExpandEnvironmentVariables("%AppData%\\Sierra Softworks\\Web Comic Downloader");
             SierraLib.Settings.ApplicationVersion = SierraLib.AssemblyInformation.GetAssemblyVersion(Assembly.GetExecutingAssembly());
 
             updates = new UpdateDialogs("Web Comic Downloader", "Sierra Softworks", "http://sierrasoftworks.com", "contact@sierrasoftworks.com",
                 SierraLib.AssemblyInformation.GetAssemblyVersion(), Settings.GetSetting("CheckForUpdates") == "true");
-
-            updates.Available += (e) =>
-                {
-                    if (SierraLib.Settings.GetSetting("UsageTracking") == "Enabled")
-                    {
-                        Tracker.CurrentInstance.CustomVariables[1] = new CustomVariable(1, "CurrentVersion", SierraLib.AssemblyInformation.GetAssemblyVersion().ToString());
-                        Tracker.CurrentInstance.CustomVariables[2] = new CustomVariable(2, "LatestVersion", e.ApplicationVersion.ToString());
-                        Tracker.CurrentInstance.TrackPageView("/WebComicDownloader/Updates/Available", "Web Comic Downloader Update Available");
-                    }
-                };
-
-            updates.Downloading += (e) =>
-                {
-                    if (Settings.GetSetting("UsageTracking") == "Enabled")
-                    {
-                        Tracker.CurrentInstance.CustomVariables[1] = new CustomVariable(1, "CurrentVersion", SierraLib.AssemblyInformation.GetAssemblyVersion().ToString());
-                        Tracker.CurrentInstance.CustomVariables[2] = new CustomVariable(2, "LatestVersion", e.ApplicationVersion.ToString());
-                        Tracker.CurrentInstance.TrackPageView("/WebComicDownloader/Updates/Downloading", "Web Comic Downloader Update Downloading");
-                    }                                    
-                };
-
-            updates.Downloaded += (e) =>
-                {
-
-
-                    if (Settings.GetSetting("UsageTracking") == "Enabled")
-                    {
-                        Tracker.CurrentInstance.CustomVariables[1] = new CustomVariable(1, "CurrentVersion", SierraLib.AssemblyInformation.GetAssemblyVersion().ToString());
-                        Tracker.CurrentInstance.CustomVariables[2] = new CustomVariable(2, "LatestVersion", e.ApplicationVersion.ToString());
-                        Tracker.CurrentInstance.TrackPageView("/WebComicDownloader/Updates/Downloaded", "Web Comic Downloader Update Downloaded");
-                    }
-                                    
-                };
-
+            
             updates.CheckForUpdatesAutomaticallyEnabled += (o, e) =>
                 {
                     Settings.SetSetting("CheckForUpdates", "true");
@@ -116,14 +80,6 @@ namespace WebcomicDownloader
                 };
 
             Updates.UpdateServers.Add("http://sierrasoftworks.com/downloads/wkd/AdvancedUpdates.xml");
-            
-
-            if (SierraLib.Settings.GetSetting("UsageTracking") == "Enabled")
-            {
-                Tracker.CurrentInstance.CustomVariables[1] = new CustomVariable(1, "CurrentVersion", SierraLib.AssemblyInformation.GetAssemblyVersion().ToString());
-                Tracker.CurrentInstance.TrackPageView("/WebComicDownloader/Started", "Web Comic Downloader Update Available");
-            }
-
         }
 
         private void LoadComics()
@@ -359,9 +315,6 @@ namespace WebcomicDownloader
         {
             if (chkDownloadAll.Checked)
             {
-
-                if (SierraLib.Settings.GetSetting("UsageTracking") == "Enabled")
-                    Tracker.CurrentInstance.TrackEvent("Web Comic Downloader", "Downloads", "Download All");
                 for (int i = 0; i < comics.Count; i++)
                 {
                     comics[i] = ComicParser.UpdateComicFromLocal(comics[i], Path.Combine(destination, comics[i].Name + "\\Comic.xml"));
@@ -404,10 +357,6 @@ namespace WebcomicDownloader
                     //try and get the latest version of this comic from the default folder
                     Comic comic1 = comic;
                     comic1 = ComicParser.UpdateComicFromLocal(comic, Path.Combine(destination, comic.Name + "\\Comic.xml"));
-
-
-                    if (SierraLib.Settings.GetSetting("UsageTracking") == "Enabled")
-                        Tracker.CurrentInstance.TrackEvent("Web Comic Downloader", "Downloads", comic1.Name);
 
                     bwDownloader.RunWorkerAsync(new Comic[] { comic1 });
 
@@ -514,14 +463,7 @@ namespace WebcomicDownloader
                 //Exit if the application is requesting the thread to do so
                 if (bwDownloader.CancellationPending)
                     return;
-
-                #region Google Analytics Tracking
-                if (SierraLib.Settings.GetSetting("UsageTracking") == "Enabled")                
-                    Tracker.CurrentInstance.TrackEvent("Web Comic Downloader", "Downloading Comic", comic.Name);
                 
-
-                #endregion
-
                 #region Initial Setup
 
                 //Set the currently downloading comic on the UI
@@ -1212,8 +1154,6 @@ namespace WebcomicDownloader
 
             //Reset the power state to enable standby once again
             SierraLib.Windows.SystemPowerState.Reset();
-
-            Tracker.CurrentInstance.TrackEvent("Web Comic Downloader", "Downloads", "Complete", downloadCount);
 
             #endregion Post Download Cleanup
         }

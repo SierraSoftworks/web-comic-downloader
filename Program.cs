@@ -5,8 +5,6 @@ using System.Threading;
 using System.Collections.Generic;
 using SierraLib.Windows.Win7API.ApplicationServices;
 using SierraLib.Windows.Win7API.Dialogs;
-using SierraLib.Analytics.GoogleAnalytics;
-using SierraLib.Net.CrashReporting;
 using SierraLib.Updates.Automatic;
 
 namespace WebcomicDownloader
@@ -19,19 +17,8 @@ namespace WebcomicDownloader
         [STAThread]
         static void Main()
         {
-
             Application.EnableVisualStyles();
-
-            CrashManager.Application = WebCrashReport.Applications.WebComicDownloader;
-            CrashManager.ApplicationName = "Web Comic Downloader";
-            CrashManager.CrashLogFolder = Environment.ExpandEnvironmentVariables("%AppData%\\Sierra Softworks\\Web Comic Downloader\\Crash Logs");
-            CrashManager.Server = "http://sierrasoftworks.com/ReportCrash.php";
-            CrashManager.Username = "apptracking";
-            CrashManager.Password = "password";
-            CrashManager.Referrer = "apptracking.sierrasoftworks.com";
-
-            AppDomain.CurrentDomain.UnhandledException += CrashManager.OnUnhandledException;
-
+            
             //Allow this app to restart if it crashed
             if(Environment.OSVersion.Version.Major >= 6)
                 ApplicationRestartRecoveryManager.RegisterForApplicationRestart(new RestartSettings("", RestartRestrictions.NotOnReboot | RestartRestrictions.NotOnPatch));
