@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WebcomicDownloader</RootNamespace>
     <AssemblyName>WKD</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ApplicationIcon>Sticky Notes.ico</ApplicationIcon>
     <IsWebBootstrapper>true</IsWebBootstrapper>
@@ -272,40 +272,28 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Analytics\SierraLib.Analytics.csproj">
-      <Project>{E217E828-FE48-4384-BAF8-217641E17154}</Project>
+    <ProjectReference Include="..\..\SierraLib.Analytics\SierraLib.Analytics\SierraLib.Analytics.csproj">
+      <Project>{875dc831-ea4a-4ba4-8fe8-e4de3c971661}</Project>
       <Name>SierraLib.Analytics</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Databases\SierraLib.Databases.csproj">
-      <Project>{46C2FAE6-9C37-44E9-AE0E-7CB2A8E11330}</Project>
-      <Name>SierraLib.Databases</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.IO\SierraLib.IO.csproj">
-      <Project>{6E3964DA-AB7B-4650-8E07-D43D9C7FE8AB}</Project>
+    <ProjectReference Include="..\..\SierraLib.IO\SierraLib.IO\SierraLib.IO.csproj">
+      <Project>{6e3964da-ab7b-4650-8e07-d43d9c7fe8ab}</Project>
       <Name>SierraLib.IO</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Multithreading\SierraLib.Multithreading.csproj">
-      <Project>{E8607A83-1C81-4D88-8E98-3E6A3DC00E68}</Project>
-      <Name>SierraLib.Multithreading</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Net\SierraLib.Net.csproj">
-      <Project>{6197BE34-BF99-48D7-A58B-7ACD81206CC8}</Project>
-      <Name>SierraLib.Net</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Security\SierraLib.Security.csproj">
+    <ProjectReference Include="..\..\SierraLib.Security\SierraLib.Security.csproj">
       <Project>{13f2382d-9f9e-4127-95c2-656c5678727f}</Project>
       <Name>SierraLib.Security</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.UI\SierraLib.UI.csproj">
+    <ProjectReference Include="..\..\SierraLib.UI\SierraLib.UI.csproj">
       <Project>{104d4942-3a12-4ff5-9f9b-bfa70f8fe835}</Project>
       <Name>SierraLib.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Updates\SierraLib.Updates.csproj">
-      <Project>{AC7CD073-FFB7-4356-AF6B-B5EDC039657F}</Project>
+    <ProjectReference Include="..\..\SierraLib.Updates\SierraLib.Updates\SierraLib.Updates.csproj">
+      <Project>{ac7cd073-ffb7-4356-af6b-b5edc039657f}</Project>
       <Name>SierraLib.Updates</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Libraries\SierraLib\SierraLib.Windows\SierraLib.Windows.csproj">
-      <Project>{CAC707A0-C944-4DA1-85B4-6F959EB618D8}</Project>
+    <ProjectReference Include="..\..\SierraLib.Windows\SierraLib.Windows\SierraLib.Windows.csproj">
+      <Project>{cac707a0-c944-4da1-85b4-6f959eb618d8}</Project>
       <Name>SierraLib.Windows</Name>
     </ProjectReference>
   </ItemGroup>
